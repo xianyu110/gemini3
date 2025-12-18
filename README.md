@@ -3,10 +3,12 @@
 # 🤖 Gemini 3.0 完全指南
 ### AI代码生成革命的全面解析
 
-![Gemini 3.0 Banner](https://img.shields.io/badge/Gemini-3.0-blue?style=for-the-badge&logo=google&logoColor=white)
-![Language](https://img.shields.io/badge/Language-中英双语-green?style=for-the-badge)
-![Year](https://img.shields.io/badge/Year-2025-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-最新版本-success?style=for-the-badge)
+[![Gemini 3.0 Banner](https://img.shields.io/badge/Gemini-3.0-blue?style=for-the-badge&logo=google&logoColor=white)](https://github.com/xianyu110/gemini3)
+[![Language](https://img.shields.io/badge/Language-中英双语-green?style=for-the-badge)](https://xianyu110.github.io/gemini3/)
+[![Year](https://img.shields.io/badge/Year-2025-orange?style=for-the-badge)](https://github.com/xianyu110/gemini3)
+[![Status](https://img.shields.io/badge/Status-最新版本-success?style=for-the-badge)](https://xianyu110.github.io/gemini3/)
+[![GitHub Stars](https://img.shields.io/github/stars/xianyu110/gemini3?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xianyu110/gemini3)
+[![GitPage](https://img.shields.io/badge/GitPage-在线访问-blue?style=for-the-badge&logo=github-pages&logoColor=white)](https://xianyu110.github.io/gemini3/)
 
 ---
 
