@@ -1,10 +1,13 @@
-# 2025 年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程 ---
+# 2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程 ​
 
-2025 年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程
+---
 
-2025 年 11 月 19 日发布解读
+2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程
+​
+2025年11月19日发布解读
 Google 正式发布 Gemini 3。
-官方将其定义为：“迄今为止最智能、最全面的 Gemini 模型，是迈向通用人工智能（AGI）的新阶段。”
+官方将其定义为：
+“迄今为止最智能、最全面的 Gemini 模型，是迈向通用人工智能（AGI）的新阶段。”
 Gemini 3 在更高层次的推理（reasoning）、多模态融合（multimodal integration）与智能体行为（agentic behavior）上实现了质的飞跃，让 AI 具备理解复杂场景、跨模态分析与自主执行任务的综合能力。
 快速开始（中文直连）
 Gemini 中文版入口
@@ -14,7 +17,7 @@ Gemini 镜像网站
 ：
 https://maynorai.top/list/#/home
 概览
-
+​
 本指南提供：
 核心特性与技术突破
 ：深度推理、多模态、智能体、长程规划与记忆。
@@ -24,9 +27,10 @@ https://maynorai.top/list/#/home
 ：官方与中国区可行方案，含注意事项与 FAQ。
 如需在页面中添加插图，请在文中相应位置插入图片，并在图片下方添加不超过 140 字的注释说明。
 Gemini 3：核心特性与技术突破
-
+​
 Gemini 3 的发布标志着人工智能从“知识检索”向“深度认知”的跨越。这一代模型不仅在多模态与推理能力上刷新行业基准，更通过全新架构实现从“被动工具”到“主动智能体”的质变。
 1. 深度推理能力（Advanced Reasoning）—— 从“回答问题”进化为“理解逻辑”
+​
 知其然，更知其所以然
 ：不仅会用“公式”，还能解释“为何成立”与“如何在现实中应用”。
 Deep Think 模式
@@ -35,7 +39,7 @@ Deep Think 模式
 ：摒弃冗余修辞，输出更简洁、客观、结构化，提供“结论 + 解释路径”。
 可选插图：推理示意与结果对照（添加图片注释，不超过 140 字）
 2. 全域多模态理解（Multimodal Intelligence）—— 跨越感官边界的认知融合
-
+​
 无缝跨模态推理
 ：图文、音视频与代码间的上下文共享与统一建模。
 视频知识萃取
@@ -50,7 +54,7 @@ Deep Think 模式
 对匹克球/体育赛事视频进行战术分析与动作指导。
 可选插图：多模态用例示意（添加图片注释，不超过 140 字）
 3. 原生智能体能力（Agentic Capabilities）—— 引入“自主执行与验证”闭环
-
+​
 配合 Google 同步发布的
 Antigravity
 平台，AI 角色从辅助工具转变为开发者的“主动合伙人”。
@@ -59,12 +63,13 @@ Antigravity：AI 原生 IDE
 全栈执行：编写代码、调用浏览器或终端。
 自我修正：运行测试，发现错误并自主修复。
 交付结果：生成可直接运行的软件或网页。
-性能标杆（公开基准）：
+性能标杆（公开基准）
+：
 WebDev Arena：Elo 1487（新纪录）。
 Terminal-Bench 2.0（工具操作）：准确率 54.2%。
 SWE-bench Verified（真实代码修复）：解决率 76.2%。
 4. 宏观规划与长程记忆（Long-Horizon Planning）—— 系统思维 × 超长上下文
-
+​
 百万级 Token 上下文
 ：跨阶段任务保持一致性与连续性。
 长周期任务执行
@@ -72,8 +77,10 @@ SWE-bench Verified（真实代码修复）：解决率 76.2%。
 Vending-Bench 2 实测
 ：成功经营虚拟公司一年并实现持续盈利，优于多数同类模型。
 如何使用 Gemini？（全球通用与中国区方案）
+​
 无论你身在何处，都有办法体验 Gemini 3 的强大能力。
 方案 A：官方渠道（全球通用）
+​
 访问官网：
 https://gemini.google.com
 登录账号：使用 Google 账户。
@@ -81,9 +88,10 @@ https://gemini.google.com
 提示
 在中国大陆地区直接访问可能遇到网络连接问题。
 方案 B：在中国大陆地区使用 Gemini（推荐）
+​
 考虑国内网络环境与使用习惯，部分第三方平台基于 Gemini API 提供中文直连体验，免或简化注册，适合快速上手与日常使用。
 推荐平台（已验证可用）
-蓝鲸 AI
+蓝鲸AI
 （首选）：
 https://maynorai.top/list/#/home
 聚合 Gemini 3 Pro、Claude 3.7 Sonnet、Grok 3、GPT-4o 等。
@@ -92,8 +100,9 @@ Xsimple
 ：
 https://maynorai.top/list/#/home
 支持 Gemini 2.5/3 Pro，集成 AI 绘画功能，扫码即可登录。
-Gemini 中文版（Gemini-Chinese）：
-https://gemini-chinese.com
+Gemini 中文版（Gemini-Chinese）
+：
+https://https://maynorai.top/list/#/home
 支持 gemini-2.5-pro、Claude-4.5-sonnet、GPT-o1、o3、Groq-3，含 AI 绘画。
 Lify.vip
 ：
@@ -102,6 +111,7 @@ https://chat.lify.vip
 重要声明
 上述第三方平台并非 Google 官方运营，均通过调用官方 API 提供服务。请注意数据安全，避免输入密码、银行账户等高度敏感信息；免费服务可能存在额度限制或后续付费策略。
 常见问题解答（FAQ）
+​
 Q1：使用国内镜像是否需要“翻墙”？
 A：不需要。文中推荐站点均可在中国大陆网络环境下直接访问。
 Q2：Gemini 是否免费？
@@ -113,7 +123,7 @@ A：一次对话中可被模型“记住/处理”的信息量，以 token 计�
 Q5：我是开发者，如何使用 Gemini API？
 A：可通过 Google AI Studio 或 Google Cloud Vertex AI 获取 API Key 并集成到应用中。注意密钥安全与配额管理。
 结语
-
+​
 Gemini 3 以更强的推理、多模态与智能体能力，开启从“被动工具”到“主动智能体”的新阶段。结合可直连的中文平台，你可以立即上手体验 Gemini 3 Pro 带来的效率与能力提升。
 立即体验：
 国内直连入口：
@@ -121,3 +131,4 @@ https://maynorai.top/list/#/home
 镜像站点：
 https://maynorai.top/list/#/home
 如需进一步的上手实例、提示词模板与对比评测，建议参阅本站相关专题文章。
+
