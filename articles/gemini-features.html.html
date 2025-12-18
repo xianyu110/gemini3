@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini 功能详解：多模态、长上下文与代码能力全解析 - Gemini 3.0 完全指南</title>
+    <meta name="description" content="Gemini 功能详解：多模态、长上下文与代码能力全解析">
+    <meta name="keywords" content="Gemini 3.0, Gemini 功能详解：多模态、长上下文与代码能力全解析, AI代码生成, 谷歌AI, 人工智能教程">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gemini 功能详解：多模态、长上下文与代码能力全解析">
+    <meta property="og:description" content="Gemini 功能详解：多模态、长上下文与代码能力全解析">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://xianyu110.github.io/gemini3/articles/gemini-features.html.html">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://xianyu110.github.io/gemini3/articles/gemini-features.html.html">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --text-primary: #202124;
+            --text-secondary: #5f6368;
+            --border-color: #dadce0;
+        }
+        
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            line-height: 1.8;
+            color: var(--text-primary);
+            background: #fafafa;
+        }
+        
+        .header {
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .article {
+            background: white;
+            border-radius: 12px;
+            padding: 50px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .breadcrumb {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .category-tag {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            color: var(--text-primary);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+            color: var(--text-primary);
+        }
+        
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .article {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="https://xianyu110.github.io/gemini3/" class="logo">
+                <i class="fas fa-robot"></i> Gemini 3.0
+            </a>
+            <nav class="nav">
+                <a href="https://xianyu110.github.io/gemini3/">首页</a>
+                <a href="https://xianyu110.github.io/gemini3/tutorial.html">教程</a>
+                <a href="https://xianyu110.github.io/gemini3/articles.html">文章</a>
+                <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <article class="article">
+            <div class="breadcrumb">
+                <a href="https://xianyu110.github.io/gemini3/">首页</a> / 
+                <a href="https://xianyu110.github.io/gemini3/articles.html">文章</a> / 
+                <span>功能特性</span>
+            </div>
+            
+            <span class="category-tag">功能特性</span>
+            
+            <p><h1>Gemini 功能详解：多模态、长上下文与代码能力全解析 </h1></p><p>Gemini 功能详解：多模态、长上下文与代码能力全解析</p><p>Google Gemini 自发布以来，以其强大的性能和独特的功能架构，迅速成为 AI 领域的焦点。本文将深入剖析 Gemini 的核心功能，带你了解它为何被称为"最强多模态模型"。💡 立即体验
+想亲自测试 Gemini 的强大功能？👉
+国内直连入口
+：
+蓝鲸 AI (https://maynorai.top/list/#/home)- 支持 Gemini 2.5 Pro 完整功能体验。
+1. 原生多模态 (Native Multimodality)
+Gemini 与其他"拼凑型"多模态模型不同，它从一开始就是为多模态而生的。
+什么是原生多模态？
+传统模型通常是分别训练文本、图像、音频组件，然后再拼接在一起。而 Gemini 是
+端到端
+训练的，这意味着它能像人类一样，同时理解和处理多种类型的信息。
+核心能力：
+👁️ 视觉理解
+：不仅能识别图片中的物体，还能理解图片之间的逻辑关系。例如，给它看一段魔术视频，它能解释魔术的原理。🎧 音频处理
+：能听懂语音语调，甚至能从一段嘈杂的录音中提取特定信息。🎬 视频分析
+：能观看长达 1 小时的视频，并回答关于视频细节的问题，或者总结视频内容。
+2. 超长上下文窗口 (Long Context Window)
+Gemini 1.5 Pro 和最新的 2.5 Pro 引入了突破性的上下文窗口技术。
+200万 Token 意味着什么？
+📚 海量阅读
+：一次性处理超过 70万个单词的文本（相当于几十本长篇小说）。💻 代码库分析
+：直接上传整个项目的代码库（超过 3万行代码），让它进行全局 Bug 审查或功能重构。🎥 长视频理解
+：上传 1 小时的视频或 11 小时的音频，它能瞬间找到你感兴趣的片段。
+相比之下，大多数主流模型的上下文窗口还在 128k 左右，Gemini 的容量是它们的
+10 倍以上
+。
+3. 卓越的代码与逻辑推理</p><p>在 HumanEval 和 MBPP 等编程基准测试中，Gemini 展现了顶尖的水平。
+代码生成
+：能编写高质量的 Python, Java, C++, Go 等多种语言代码。
+逻辑推理
+：在处理复杂的数学问题和逻辑谜题时，错误率显著降低。
+多语言能力
+：在翻译和跨语言理解方面表现优异，特别是中文处理能力，已经非常地道。
+4. Gemini 模型家族对比</p><p>Google 针对不同场景推出了不同版本的 Gemini 模型：
+版本
+适用场景
+特点
+Gemini Ultra
+复杂任务、科学研究
+能力最强，推理最深，但速度较慢，成本高。
+Gemini Pro (1.5/2.5)
+通用场景、日常办公
+性价比之王
+，平衡了性能、速度和成本，支持超长上下文。
+Gemini Flash
+高频应用、简单任务
+速度极快，延迟极低，价格最便宜，适合大规模调用。
+Gemini Nano
+移动端、离线运行
+运行在 Pixel 手机等终端设备上，保护隐私，无需联网。
+5. 实际应用案例</p><p>场景一：财报分析</p><p>上传一份几百页的 PDF 财报，问 Gemini："这家公司去年的研发投入增长了多少？主要风险因素有哪些？" 它能迅速从文档中提取数据并生成图表。
+场景二：视频内容检索</p><p>上传一段 30 分钟的会议录像，问："产品经理在会议中提到的关于 UI 设计的建议是什么？" Gemini 会直接定位到相关时间点并总结内容。
+场景三：全栈开发辅助</p><p>将前端 Vue 代码和后端 Python 代码同时发给 Gemini，让它帮你排查前后端接口对接的问题。
+总结</p><p>Gemini 不仅仅是一个聊天机器人，它是一个能看、能听、能思考的全能 AI 助手。特别是其
+超长上下文
+和
+原生多模态
+能力，为 AI 的应用场景打开了新的大门。🚀
+现在就开始探索
+：
+蓝鲸 AI (https://maynorai.top/list/#/home)
+</p>
+            
+            <div class="cta-box">
+                <h3>🚀 立即体验 Gemini 3.0</h3>
+                <p>开始你的 AI 代码生成之旅</p>
+                <a href="https://maynorai.top/list/#/home" class="cta-btn" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 访问 MaynorAI
+                </a>
+            </div>
+        </article>
+    </div>
+    
+    <footer class="footer">
+        <p>© 2025 Gemini 3.0 完全指南 | <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a></p>
+    </footer>
+</body>
+</html>

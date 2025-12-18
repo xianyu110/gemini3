@@ -92,7 +92,7 @@
 
 <div align="center">
 
-[![MaynorAI](https://img.shields.io/badge/MaynorAI-体验平台-blue?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMTZMMTIgMTJNOCAxNkw0IDEyTTggMTZMNiAxME04IDE2TDEwIDEwIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+)](https://maynorai.top/list/#/home)
+[![MaynorAI](https://img.shields.io/badge/MaynorAI-立即体验-blue?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMTZMMTIgMTJNOCAxNkw0IDEyTTggMTZMNiAxME04IDE2TDEwIDEwIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+)](https://maynorai.top/list/#/home)
 
 </div>
 
@@ -174,9 +174,19 @@ Gemini 3.0的发布，正在加速AI从"玩具"向"工具"的转变。它展示�
 
 <div align="center">
 
+## 🔗 访问链接
+
+- 🏠 **主页**： https://xianyu110.github.io/gemini3/
+- 📚 **教程**： https://xianyu110.github.io/gemini3/tutorial.html
+- 📝 **文章列表**： https://xianyu110.github.io/gemini3/articles.html
+- 📦 **GitHub**： https://github.com/xianyu110/gemini3
+- 🚀 **体验 Gemini**： https://maynorai.top/list/#/home
+
+---
+
 **如果觉得这篇指南对你有帮助，请给个⭐️支持一下！**
 
-[![GitHub stars](https://img.shields.io/github/stars/your-username/gemini3-guide?style=social)](https://github.com/your-username/gemini3-guide)
+[![GitHub stars](https://img.shields.io/github/stars/xianyu110/gemini3?style=social)](https://github.com/xianyu110/gemini3)
 
 </div>
 

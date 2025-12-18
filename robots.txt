@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://xianyu110.github.io/gemini3/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin and private directories
+Disallow: /.git/
+Disallow: /.claude/
+Disallow: /素材/
+Disallow: /*.py$
+Disallow: /*.md$
+
+# Allow all articles and pages
+Allow: /articles/
+Allow: /tutorial.html
+Allow: /index.html

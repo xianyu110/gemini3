@@ -1,0 +1,63 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Gemini 3.0 完全指南",
+  "description": "Gemini 3.0是谷歌革命性的AI大模型，具备超强代码生成能力。本站提供完整的使用教程、功能介绍和免费体验渠道。",
+  "url": "https://xianyu110.github.io/gemini3/",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Organization",
+    "name": "Gemini 3.0 Guide Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gemini 3.0 Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xianyu110.github.io/gemini3/logo.png"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://xianyu110.github.io/gemini3/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Gemini 3.0 教程文章",
+    "description": "全面的 Gemini 3.0 使用教程和指南",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Article",
+          "name": "什么是 Gemini 3.0？",
+          "url": "https://xianyu110.github.io/gemini3/articles/what-is-gemini.html.html",
+          "description": "全面了解 Gemini 3.0 的核心能力、技术特点以及与其他 AI 模型的区别"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Article",
+          "name": "Gemini 3.0 使用指南",
+          "url": "https://xianyu110.github.io/gemini3/articles/gemini-guide.html.html",
+          "description": "详细介绍如何在中国大陆使用 Gemini 3.0，包括访问方式和使用技巧"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Article",
+          "name": "Gemini 3.0 镜像站推荐",
+          "url": "https://xianyu110.github.io/gemini3/articles/gemini-mirror-sites.html.html",
+          "description": "国内访问 Gemini 3.0 的最佳镜像站点推荐和对比"
+        }
+      }
+    ]
+  },
+  "keywords": "Gemini 3.0, AI代码生成, 谷歌AI, 人工智能, 大语言模型, 代码自动生成, AI助手, 编程工具, Gemini教程, AI开发"
+}

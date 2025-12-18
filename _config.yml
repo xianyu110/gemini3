@@ -1,7 +1,7 @@
 # Site settings
-title: "Gemini 3.0 Complete Guide"
-description: "Comprehensive guide to Google's revolutionary AI model Gemini 3.0 with superior code generation capabilities"
-url: "https://your-username.github.io"
+title: "Gemini 3.0 完全指南 - AI代码生成革命"
+description: "Gemini 3.0是谷歌革命性的AI大模型，具备超强代码生成能力。本站提供完整的使用教程、功能介绍和免费体验渠道，助你掌握AI代码生成的新纪元。"
+url: "https://xianyu110.github.io"
 baseurl: "/gemini3"
 
 # Theme settings
@@ -12,13 +12,16 @@ markdown: kramdown
 highlighter: rouge
 
 # SEO settings
-lang: en
-author: "Your Name"
-email: "your.email@example.com"
+lang: zh-CN
+author: "Gemini 3.0 Guide Team"
+email: "contact@example.com"
 
 # Social media
-github_username: your-username
-twitter_username: your_twitter
+github_username: xianyu110
+twitter_username: gemini3guide
+
+# Keywords
+keywords: "Gemini 3.0, AI代码生成, 谷歌AI, 人工智能, 大语言模型, 代码自动生成, AI助手, 编程工具"
 
 # Plugins
 plugins:

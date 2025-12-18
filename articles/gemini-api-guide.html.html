@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini API 开发指南：免费申请 API Key 与 Python/Node.js 接入教程 - Gemini 3.0 完全指南</title>
+    <meta name="description" content="Gemini API 开发指南：免费申请 API Key 与 Python/Node.js 接入教程">
+    <meta name="keywords" content="Gemini 3.0, Gemini API 开发指南：免费申请 API Key 与 Python/Node.js 接入教程, AI代码生成, 谷歌AI, 人工智能教程">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gemini API 开发指南：免费申请 API Key 与 Python/Node.js 接入教程">
+    <meta property="og:description" content="Gemini API 开发指南：免费申请 API Key 与 Python/Node.js 接入教程">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://xianyu110.github.io/gemini3/articles/gemini-api-guide.html.html">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://xianyu110.github.io/gemini3/articles/gemini-api-guide.html.html">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --text-primary: #202124;
+            --text-secondary: #5f6368;
+            --border-color: #dadce0;
+        }
+        
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            line-height: 1.8;
+            color: var(--text-primary);
+            background: #fafafa;
+        }
+        
+        .header {
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .article {
+            background: white;
+            border-radius: 12px;
+            padding: 50px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .breadcrumb {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .category-tag {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            color: var(--text-primary);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+            color: var(--text-primary);
+        }
+        
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .article {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="https://xianyu110.github.io/gemini3/" class="logo">
+                <i class="fas fa-robot"></i> Gemini 3.0
+            </a>
+            <nav class="nav">
+                <a href="https://xianyu110.github.io/gemini3/">首页</a>
+                <a href="https://xianyu110.github.io/gemini3/tutorial.html">教程</a>
+                <a href="https://xianyu110.github.io/gemini3/articles.html">文章</a>
+                <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <article class="article">
+            <div class="breadcrumb">
+                <a href="https://xianyu110.github.io/gemini3/">首页</a> / 
+                <a href="https://xianyu110.github.io/gemini3/articles.html">文章</a> / 
+                <span>使用教程</span>
+            </div>
+            
+            <span class="category-tag">使用教程</span>
+            
+            <p><h1>Gemini API 开发指南：免费申请 API Key 与 Python/Node.js 接入教程 </h1></p><p>Gemini API 开发指南：免费申请 API Key 与 Python/Node.js 接入教程</p><p>Google Gemini 提供了强大的 API 接口，允许开发者将其多模态能力集成到自己的应用程序中。目前，Google AI Studio 为开发者提供了慷慨的免费额度。本文将带你从零开始接入 Gemini API。💡 开发者福利
+如果你需要更稳定、无需翻墙的 API 服务，或者需要集成多个模型（如 GPT-4, Claude），可以考虑使用聚合 API 服务。👉
+推荐平台
+：
+Xsimple (https://maynorai.top/list/#/home)- 提供兼容 OpenAI 格式的 API 接口，一站式接入主流模型。
+第一步：获取 API Key</p><p>访问 Google AI Studio
+打开网址：
+https://aistudio.google.com/（需使用美国等支持地区的 IP 访问）。
+登录 Google 账号
+使用你的 Google 账号登录。
+创建 API Key
+点击左侧菜单的 "Get API key"。
+点击 "Create API key" 按钮。
+选择 "Create API key in new project"（在新项目中创建）。
+复制生成的 API Key 并妥善保存。
+第二步：环境配置</p><p>Gemini 提供了官方的 Python 和 Node.js SDK，也可以通过 REST API 调用。
+Python 环境</p><p>bash
+pip
+install
+-q
+-U
+google-generativeai
+Node.js 环境</p><p>bash
+npm
+install
+@google/generative-ai
+第三步：代码示例</p><p>Python 接入示例</p><p>python
+import
+google.generativeai
+as
+genai
+import
+os
+<h1>配置 API Key</h1></p><p>genai.configure(
+api_key
+="YOUR_API_KEY")
+<h1>选择模型</h1></p><p>model
+=
+genai.GenerativeModel('gemini-2.5-pro')
+<h1>发送文本消息</h1></p><p>response
+=
+model.generate_content("请用一句话介绍你自己")
+print
+(response.text)# 多模态输入（文本 + 图片）# img = PIL.Image.open('image.jpg')# response = model.generate_content(["这张图片里有什么？", img])# print(response.text)
+Node.js 接入示例</p><p>javascript
+const
+{
+GoogleGenerativeAI
+}=
+require
+("@google/generative-ai");// 初始化
+const
+genai
+=
+new
+GoogleGenerativeAI
+("YOUR_API_KEY");
+const
+model
+=
+genai.
+getGenerativeModel
+({ model:"gemini-2.5-pro"});
+async
+function
+run
+(){
+// 发送文本
+const
+prompt
+="请用一句话介绍你自己";
+const
+result
+=
+await
+model.
+generateContent
+(prompt);
+const
+response
+=
+await
+result.response;
+const
+text
+=
+response.
+text
+();
+console.
+log
+(text);}
+run
+();
+价格与限制</p><p>目前 Google AI Studio 提供两种计费模式：
+特性
+免费版 (Free of Charge)
+付费版 (Pay-as-you-go)
+RPM (每分钟请求数)
+15
+360+
+TPM (每分钟 Token 数)
+32,000
+2,000,000+
+每日请求限制
+1,500
+无限制
+数据隐私
+数据可能用于改进模型
+数据不会被用于训练
+注意
+：免费版虽然免费，但数据可能会被 Google 用于模型训练，
+请勿在免费版 API 中发送敏感个人数据或商业机密
+。
+替代方案：聚合 API</p><p>对于国内开发者，直接使用 Google 官方 API 可能会遇到网络连接问题（Connection Timeout）。此时，使用国内的中转 API 或聚合 API 是更好的选择。
+推荐使用
+Xsimple API
+，它具有以下优势：✅
+国内直连
+：无需配置代理，速度快。✅
+OpenAI 兼容
+：可以使用标准的 OpenAI SDK 调用 Gemini 模型，无需修改代码逻辑。✅
+多模型支持
+：一个 Key 即可调用 Gemini、GPT-4、Claude 等所有模型。
+python
+<h1>使用 OpenAI SDK 调用 Xsimple 的 Gemini 模型</h1></p><p>from
+openai
+import
+OpenAI
+client
+=
+OpenAI(
+api_key
+="YOUR_XSIMPLE_KEY",
+base_url
+="https://api.xsimplechat.com/v1"# 示例地址，请以官网为准
+)
+response
+=
+client.chat.completions.create(
+model
+="gemini-2.5-pro",
+messages
+=[
+{"role":
+"user",
+"content":
+"你好，Gemini！"}
+])
+print
+(response.choices[
+0
+].message.content)
+总结</p><p>个人学习/测试
+：直接申请 Google 官方免费 API Key。
+生产环境/国内部署
+：建议使用
+Xsimple
+等聚合 API 服务，以获得更好的稳定性和访问速度。
+</p>
+            
+            <div class="cta-box">
+                <h3>🚀 立即体验 Gemini 3.0</h3>
+                <p>开始你的 AI 代码生成之旅</p>
+                <a href="https://maynorai.top/list/#/home" class="cta-btn" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 访问 MaynorAI
+                </a>
+            </div>
+        </article>
+    </div>
+    
+    <footer class="footer">
+        <p>© 2025 Gemini 3.0 完全指南 | <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a></p>
+    </footer>
+</body>
+</html>

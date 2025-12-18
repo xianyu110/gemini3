@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini 最新使用指南 (2025 年 11 月)：Google AI Gemini 2.5 pro 如何使用及国内使用教程 - Gemini 3.0 完全指南</title>
+    <meta name="description" content="Gemini 最新使用指南 (2025 年 11 月)：Google AI Gemini 2.5 pro 如何使用及国内使用教程">
+    <meta name="keywords" content="Gemini 3.0, Gemini 最新使用指南 (2025 年 11 月)：Google AI Gemini 2.5 pro 如何使用及国内使用教程, AI代码生成, 谷歌AI, 人工智能教程">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gemini 最新使用指南 (2025 年 11 月)：Google AI Gemini 2.5 pro 如何使用及国内使用教程">
+    <meta property="og:description" content="Gemini 最新使用指南 (2025 年 11 月)：Google AI Gemini 2.5 pro 如何使用及国内使用教程">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://xianyu110.github.io/gemini3/articles/gemini-2.5-pro.html.html">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://xianyu110.github.io/gemini3/articles/gemini-2.5-pro.html.html">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --text-primary: #202124;
+            --text-secondary: #5f6368;
+            --border-color: #dadce0;
+        }
+        
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            line-height: 1.8;
+            color: var(--text-primary);
+            background: #fafafa;
+        }
+        
+        .header {
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .article {
+            background: white;
+            border-radius: 12px;
+            padding: 50px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        .breadcrumb {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .category-tag {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            color: var(--text-primary);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+            color: var(--text-primary);
+        }
+        
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .article {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="https://xianyu110.github.io/gemini3/" class="logo">
+                <i class="fas fa-robot"></i> Gemini 3.0
+            </a>
+            <nav class="nav">
+                <a href="https://xianyu110.github.io/gemini3/">首页</a>
+                <a href="https://xianyu110.github.io/gemini3/tutorial.html">教程</a>
+                <a href="https://xianyu110.github.io/gemini3/articles.html">文章</a>
+                <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <article class="article">
+            <div class="breadcrumb">
+                <a href="https://xianyu110.github.io/gemini3/">首页</a> / 
+                <a href="https://xianyu110.github.io/gemini3/articles.html">文章</a> / 
+                <span>版本介绍</span>
+            </div>
+            
+            <span class="category-tag">版本介绍</span>
+            
+            <p><h1>Gemini 最新使用指南 (2025 年 11 月)：Google AI Gemini 2.5 pro 如何使用及国内使用教程 </h1></p><p>Gemini 最新使用指南 (2025 年 11 月)：Google AI Gemini 2.5 pro 如何使用及国内使用教程</p><p>2025 年 11 月 05 日更新
+本教程已更新至最新版本，全面支持 Gemini 2.5 Pro 模型。
+Gemini (双子座) 作为 Google DeepMind 团队开发的旗舰级语言模型，以其卓越的多模态能力和强大的逻辑推理而闻名于世。它在理解和处理文本、图像、音频和视频方面均表现出色，被广泛认为是 AI 技术的顶尖代表。本文将详细介绍如何在中国大陆方便地使用 Gemini，目前其最前沿的模型为 Gemini 2.5 Pro。
+快速访问
+🚀 Gemini 中文版入口
+https://maynorai.top/list/#/home
+- 国内直连，无需翻墙，支持 Gemini 2.5 Pro
+🌐 Gemini 镜像网站
+https://maynorai.top/list/#/home
+- 功能全面，集成多个主流 AI 模型
+为什么这么多人想用 Gemini？
+🎯 核心优势</p><p>1. 多模态能力超群
+Gemini 是真正的多模态原生模型，能够无缝地理解和融合文本、代码、图片、音频和视频信息，处理复杂的多媒体任务时表现惊人。
+2. 逻辑推理能力强大
+在各类复杂的推理和编程评测中，Gemini 屡次刷新纪录，尤其擅长处理需要深度思考和分析的难题。
+3. 技术生态强大
+背靠 Google 的庞大技术生态，Gemini 能够调用 Google 搜索、Google Workspace 等多种工具，实现信息的实时检索和处理，功能极为强大。
+总结
+Gemini 被誉为 AI 界的「全能型选手」与"聪明的逻辑思想家"，绝对值得体验！
+国内如何使用 Gemini？
+对于国内用户，直接访问官方渠道可能存在网络障碍。以下平台提供了稳定、便捷的 Gemini 模型接入服务：
+1. Xsimple（官方网址）
+⭐ 综合评分：★★★★★
+亮点特色：
+支持的模型非常全面，除了 Gemini 2.5 Pro 外，还集成了 GPT-4o、Claude 3 Sonnet、Grok-3、DeepSeek 等全球顶尖的主流 AI 模型。
+核心功能：✨ AI PPT 一键生成
+📚 知识库构建
+📖 AI 学术翻译
+🔍 联网实时搜索
+📊 高级图表分析
+适用场景：
+对于需要处理数据和制作演示文稿的办公和学术场景，堪称神器。
+用户体验：
+功能高度集成，界面设计现代直观，在不同 AI 模型之间切换调用非常顺畅，一个平台满足多种需求。🔗
+访问 Xsimple
+2. 蓝鲸 AI（官方网址）
+⭐ 综合评分：★★★★★
+亮点特色：
+核心模型覆盖广泛，包括 Gemini 2.5 Pro、GPT-4o（支持绘图）、Claude 3 Sonnet 等，同时还支持 Midjourney AI 绘画。
+主打优势：🎨 界面设计追求极简和高效
+⚡ 响应速度快
+🖼️ 集成 Midjourney 绘画功能
+适用场景：
+非常适合追求轻量化和整洁操作界面的用户。
+特色体验：
+集成的 Midjourney 绘画功能无需"科学上网"，对于喜爱 AI 艺术创作的用户来说极具吸引力。🔗
+访问蓝鲸 AI
+3. Gemini-Chinese（官方网址）
+⭐ 综合评分：★★★★☆
+亮点特色：
+核心模型覆盖广泛，包括 Gemini 2.5 Pro、GPT-4o（支持绘图）、Claude 3 Sonnet 等，同时还支持 Midjourney AI 绘画。
+主打优势：🎯 专注 Gemini 模型优化
+💨 界面设计追求极简和高效
+🚀 响应速度快
+适用场景：
+非常适合追求轻量化和整洁操作界面的用户。
+特色体验：
+集成的 Midjourney 绘画功能无需"科学上网"，对于喜爱 AI 艺术创作的用户来说极具吸引力。🔗
+访问 Gemini-Chinese
+使用 Gemini 的注意事项</p><p>隐私保护
+保护个人隐私
+：在使用任何第三方平台时，都应避免输入高度敏感的个人身份信息或机密数据。
+合理订阅
+合理订阅
+：选择正规、信誉良好的服务商进行订阅，以获得稳定和高质量的体验。
+关注更新
+关注模型更新
+：留意官方和平台的模型更新动态，例如最新的 Gemini 2.5 Pro，以便及时体验最前沿的功能。
+常见问题解答 (FAQ)
+1. Gemini 比起其他模型强在哪里？
+Gemini 最大的优势在于其原生的多模态理解和强大的逻辑推理能力。它能像人一样同时"看"和"听"，并结合这些信息进行思考和回答，处理多媒体混合任务时无人能及。
+2. 国内稳定使用 Gemini 的最佳选择是什么？
+从功能全面性和集成度来看，推荐使用
+Xsimple
+，它不仅支持最新的 Gemini 模型，还提供了丰富的效率工具，适合多种复杂场景。
+如果追求简洁和速度，
+蓝鲸 AI
+是不错的选择。
+3. Gemini 支持中文吗？
+完全支持。Gemini 对中文的理解和生成能力都非常出色，可以进行流畅、自然的中文对话和内容创作。
+4. 有没有免费的方式体验 Gemini？
+部分第三方平台或镜像网站可能会提供有限次数的免费试用额度，可以关注这些平台的活动。但要获得长期稳定的服务，付费订阅是最佳选择。
+总结</p><p>Gemini 作为 Google 的旗舰 AI 模型，在国内的使用门槛已经大大降低。通过本文推荐的几个优质平台，你可以轻松体验到 Gemini 2.5 Pro 的强大能力，无论是多模态理解、逻辑推理还是中文对话，都能获得出色的体验。
+选择适合自己的平台，开始你的 AI 之旅吧！
+</p>
+            
+            <div class="cta-box">
+                <h3>🚀 立即体验 Gemini 3.0</h3>
+                <p>开始你的 AI 代码生成之旅</p>
+                <a href="https://maynorai.top/list/#/home" class="cta-btn" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 访问 MaynorAI
+                </a>
+            </div>
+        </article>
+    </div>
+    
+    <footer class="footer">
+        <p>© 2025 Gemini 3.0 完全指南 | <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章列表 - Gemini 3.0 完全指南</title>
+    <meta name="description" content="Gemini 3.0 完整教程文章列表，涵盖入门指南、版本介绍、访问方式、功能特性等全方位内容">
+    <meta name="keywords" content="Gemini 3.0, AI教程, 谷歌AI, 人工智能, 代码生成">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --text-primary: #202124;
+            --text-secondary: #5f6368;
+        }
+        
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: #fafafa;
+        }
+        
+        .header {
+            background: white;
+            border-bottom: 1px solid #dadce0;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .category-section {
+            margin-bottom: 60px;
+        }
+        
+        .category-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .article-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .article-card h3 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .article-card h3 a:hover {
+            color: var(--primary-color);
+        }
+        
+        .article-desc {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="https://xianyu110.github.io/gemini3/" class="logo">
+                <i class="fas fa-robot"></i> Gemini 3.0
+            </a>
+            <nav class="nav">
+                <a href="https://xianyu110.github.io/gemini3/">首页</a>
+                <a href="https://xianyu110.github.io/gemini3/tutorial.html">教程</a>
+                <a href="https://xianyu110.github.io/gemini3/articles.html" class="active">文章</a>
+                <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="hero">
+        <h1>📚 Gemini 3.0 文章列表</h1>
+        <p>全面的教程和指南，助你掌握 AI 代码生成革命</p>
+    </div>
+    
+    <div class="container">
+        <div class="category-section"><h2>入门指南</h2><div class="articles-grid">
+                    <div class="article-card">
+                        <h3><a href="articles/what-is-gemini.html.html">什么是 Gemini？深度解析</a></h3>
+                        <p class="article-desc">什么是 Gemini？深度解析...</p>
+                        <a href="articles/what-is-gemini.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-guide.html.html">Gemini 中文版：Gemini 在国内使用详细教程（支持 Gemini 3 pro 和 Gemini 2.5 pro）【2025 年 12 月更新】</a></h3>
+                        <p class="article-desc">Gemini 中文版：Gemini 在国内使用详细教程（支持 Gemini 3 pro 和 Gemini 2.5 pro）【2025 年 12 月更新】
+2025 年 12 月 14 日更新
+本教程已更新至最新版本，全面支持 Gemini 3.0 和 Gemini 2.5 Pro 模型。
+Gemin...</p>
+                        <a href="articles/gemini-guide.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-chinese-guide.html.html">Gemini 中文版完整使用指南：（支持 Gemini 2.5 pro）【2025 年 10 月更新】</a></h3>
+                        <p class="article-desc">Gemini 中文版完整使用指南：（支持 Gemini 2.5 pro）【2025 年 10 月更新】
+2025 年 11 月更新
+本指南全面支持最新的 Gemini 2.5 Pro 模型，帮助您充分发挥 AI 助手的强大能力。
+快速访问通道
+🚀 Gemini 中文版官方入口
+https://may...</p>
+                        <a href="articles/gemini-chinese-guide.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/use-gemini-guide.html.html">Gemini 中文版：Google AI Gemini 3.0 国内使用指南（支持 Gemini 2.5 pro）~【2025 年 11 月更新】</a></h3>
+                        <p class="article-desc">Gemini 中文版：Google AI Gemini 3.0 国内使用指南（支持 Gemini 2.5 pro）~【2025 年 11 月更新】
+Gemini (双子座) 作为 Google DeepMind 团队开发的旗舰级语言模型，以其卓越的多模态能力和强大的逻辑推理而闻名于世。它在理解和处理...</p>
+                        <a href="articles/use-gemini-guide.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    </div></div><div class="category-section"><h2>版本介绍</h2><div class="articles-grid">
+                    <div class="article-card">
+                        <h3><a href="articles/gemini3.html.html">Gemini 3 正式发布：Google Gemini 国内使用教程、功能评测与 GPT-5 对比</a></h3>
+                        <p class="article-desc">Gemini 3 正式发布：Google Gemini 国内使用教程、功能评测与 GPT-5 对比...</p>
+                        <a href="articles/gemini3.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-3.html.html">Google AI Gemini：国内 Gemini 2.5 Pro 使用最新指南【2025 年 11 月更新】</a></h3>
+                        <p class="article-desc">Google AI Gemini：国内 Gemini 2.5 Pro 使用最新指南【2025 年 11 月更新】
+2025 年 11 月 05 日更新
+本教程已全面更新，涵盖 Gemini 2.5 Pro 最新功能、国内访问方式及实战技巧，助你快速上手这款顶级 AI 模型。
+前言...</p>
+                        <a href="articles/gemini-3.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini3-release.html.html">2025 年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程</a></h3>
+                        <p class="article-desc">2025 年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程...</p>
+                        <a href="articles/gemini3-release.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-2.5-pro.html.html">Gemini 最新使用指南 (2025 年 11 月)：Google AI Gemini 2.5 pro 如何使用及国内使用教程</a></h3>
+                        <p class="article-desc">Gemini 最新使用指南 (2025 年 11 月)：Google AI Gemini 2.5 pro 如何使用及国内使用教程...</p>
+                        <a href="articles/gemini-2.5-pro.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    </div></div><div class="category-section"><h2>访问方式</h2><div class="articles-grid">
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-mirror-sites.html.html">Gemini3.0 镜像站完整推荐：国内访问 Gemini 最佳方案 2025</a></h3>
+                        <p class="article-desc">Gemini3.0 镜像站完整推荐：国内访问 Gemini 最佳方案 2025...</p>
+                        <a href="articles/gemini-mirror-sites.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini3-latest-mirror-sites.html.html">Gemini 3 镜像网站大全：2025 最新国内直连 Google Gemini 3 Pro 入口</a></h3>
+                        <p class="article-desc">Gemini 3 镜像网站大全：2025 最新国内直连 Google Gemini 3 Pro 入口...</p>
+                        <a href="articles/gemini3-latest-mirror-sites.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini3-cn-access-tutorial.html.html">Google Gemini 3 国内怎么用？免费 Gemini 3 镜像站使用教程与深度评测</a></h3>
+                        <p class="article-desc">Google Gemini 3 国内怎么用？免费 Gemini 3 镜像站使用教程与深度评测...</p>
+                        <a href="articles/gemini3-cn-access-tutorial.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-china.html.html">Gemini 中文版：Google AI Gemini 3.0 国内使用指南（支持 Gemini 2.5 pro）【2025 年 11 月更新】</a></h3>
+                        <p class="article-desc">Gemini 中文版：Google AI Gemini 3.0 国内使用指南（支持 Gemini 2.5 pro）【2025 年 11 月更新】
+💡 2025 年 11 月 19 日最新更新
+本教程已全面更新，完整支持 Google 最新发布的
+Gemini 3.0
+和
+Gemini 2.5 Pro...</p>
+                        <a href="articles/gemini-china.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    </div></div><div class="category-section"><h2>功能特性</h2><div class="articles-grid">
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-features.html.html">Gemini 功能详解：多模态、长上下文与代码能力全解析</a></h3>
+                        <p class="article-desc">Gemini 功能详解：多模态、长上下文与代码能力全解析...</p>
+                        <a href="articles/gemini-features.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-ai-drawing.html.html">Gemini AI 绘画功能完整指南：AI 创作艺术新纪元</a></h3>
+                        <p class="article-desc">Gemini AI 绘画功能完整指南：AI 创作艺术新纪元...</p>
+                        <a href="articles/gemini-ai-drawing.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-ai-dialogue.html.html">Gemini AI 对话功能详解：打造最智能的对话体验</a></h3>
+                        <p class="article-desc">Gemini AI 对话功能详解：打造最智能的对话体验...</p>
+                        <a href="articles/gemini-ai-dialogue.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-ai-assistant.html.html">Gemini AI 助手最佳实践：让工作效率提升 300%</a></h3>
+                        <p class="article-desc">Gemini AI 助手最佳实践：让工作效率提升 300%
+效率革命
+掌握 Gemini AI 助手的正确使用方法，让您的工作效率实现质的飞跃。
+快速访问通道
+🚀 Gemini 中文版官方入口
+https://maynorai.top/list/#/home
+- 国内直连，无需翻墙，完整支持 Gem...</p>
+                        <a href="articles/gemini-ai-assistant.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    </div></div><div class="category-section"><h2>使用教程</h2><div class="articles-grid">
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-registration.html.html">Gemini 注册指南：2025 最新 Google Gemini 账号申请教程（含免注册方法）</a></h3>
+                        <p class="article-desc">Gemini 注册指南：2025 最新 Google Gemini 账号申请教程（含免注册方法）
+💡 省流助手
+如果你不想折腾复杂的注册流程和网络环境，可以直接使用国内直连的镜像站，
+无需注册 Google 账号
+即可直接使用 Gemini 2.5 Pro 等高级模型。🚀
+推荐入口
+：
+蓝鲸 AI ...</p>
+                        <a href="articles/gemini-registration.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-installation.html.html">Gemini 安装手册：手机 App 下载与网页版使用全攻略（Android/iOS/Web）</a></h3>
+                        <p class="article-desc">Gemini 安装手册：手机 App 下载与网页版使用全攻略（Android/iOS/Web）
+想要随时随地使用 Google Gemini？本文将为你提供详细的安装和使用指南，覆盖 Android、iOS 和 Web 网页端。💡 快速开始
+对于不想安装 App 或受限于网络环境的用户，直接使用网页...</p>
+                        <a href="articles/gemini-installation.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-api-guide.html.html">Gemini API 开发指南：免费申请 API Key 与 Python/Node.js 接入教程</a></h3>
+                        <p class="article-desc">Gemini API 开发指南：免费申请 API Key 与 Python/Node.js 接入教程...</p>
+                        <a href="articles/gemini-api-guide.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    </div></div><div class="category-section"><h2>对比评测</h2><div class="articles-grid">
+                    <div class="article-card">
+                        <h3><a href="articles/gemini-vs-gpt4.html.html">Gemini vs GPT-4：谁更强？</a></h3>
+                        <p class="article-desc">Gemini vs GPT-4：谁更强？
+概述...</p>
+                        <a href="articles/gemini-vs-gpt4.html.html" class="read-more">阅读全文 →</a>
+                    </div>
+                    </div></div>
+    </div>
+    
+    <footer style="text-align: center; padding: 40px; color: #5f6368;">
+        <p>© 2025 Gemini 3.0 完全指南 | <a href="https://github.com/xianyu110/gemini3" target="_blank" style="color: #4285f4;">GitHub</a></p>
+    </footer>
+</body>
+</html>
