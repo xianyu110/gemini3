@@ -1,0 +1,58 @@
+# Site settings
+title: "Gemini 3.0 Complete Guide"
+description: "Comprehensive guide to Google's revolutionary AI model Gemini 3.0 with superior code generation capabilities"
+url: "https://your-username.github.io"
+baseurl: "/gemini3"
+
+# Theme settings
+theme: minima
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# SEO settings
+lang: en
+author: "Your Name"
+email: "your.email@example.com"
+
+# Social media
+github_username: your-username
+twitter_username: your_twitter
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
