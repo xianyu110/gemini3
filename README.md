@@ -18,28 +18,34 @@
 
 <table>
 <tr>
-<td align="center" width="25%">
+<td align="center" width="20%">
 <a href="https://xianyu110.github.io/gemini3/">
 <img src="https://img.shields.io/badge/🏠_主页-访问-4285f4?style=for-the-badge" alt="主页"/><br/>
 <sub><b>网站主页</b></sub>
 </a>
 </td>
-<td align="center" width="25%">
+<td align="center" width="20%">
 <a href="https://xianyu110.github.io/gemini3/tutorial.html">
 <img src="https://img.shields.io/badge/📚_教程-学习-34a853?style=for-the-badge" alt="教程"/><br/>
 <sub><b>详细教程</b></sub>
 </a>
 </td>
-<td align="center" width="25%">
+<td align="center" width="20%">
 <a href="https://xianyu110.github.io/gemini3/articles.html">
 <img src="https://img.shields.io/badge/📝_文章-阅读-fbbc05?style=for-the-badge" alt="文章"/><br/>
 <sub><b>20篇文章</b></sub>
 </a>
 </td>
-<td align="center" width="25%">
+<td align="center" width="20%">
 <a href="https://maynorai.top/list/#/home">
 <img src="https://img.shields.io/badge/🚀_体验-立即开始-ea4335?style=for-the-badge" alt="体验"/><br/>
 <sub><b>免费体验</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://apipro.maynor1024.live/">
+<img src="https://img.shields.io/badge/🔌_API-接口服务-9c27b0?style=for-the-badge" alt="API"/><br/>
+<sub><b>API中转站</b></sub>
 </a>
 </td>
 </tr>
@@ -55,10 +61,16 @@
 
 - 📚 **20篇深度文章** - 涵盖入门、进阶、实战等各个方面
 - 🎯 **详细教程** - 从零开始，手把手教你使用 Gemini 3.0
+- � ***API 使用指南** - 完整的 API 调用示例和最佳实践
 - 🖼️ **7张精选图片** - 高质量的示例和演示图片
 - 🌐 **双语支持** - 中英文双语内容
-- 📱 **响应式设计** - 完美支持手机、平板、电脑
+- � ***响应式设计** - 完美支持手机、平板、电脑
 - 🔍 **SEO优化** - 完整的搜索引擎优化
+
+### 🌟 推荐服务
+
+- 🚀 **[MaynorAI](https://maynorai.top/list/#/home)** - 免费在线体验平台
+- 🔌 **[API 中转站](https://apipro.maynor1024.live/)** - 国内优化的 API 接口服务
 
 ## ✨ 主要特性
 
@@ -145,9 +157,10 @@ Gemini 3.0 是 Google 推出的最新一代 AI 大语言模型，具有以下特
 
 <table>
 <tr>
-<th width="33%">方式一：第三方平台</th>
-<th width="33%">方式二：LMArena</th>
-<th width="33%">方式三：官方通道</th>
+<th width="25%">方式一：第三方平台</th>
+<th width="25%">方式二：API中转站</th>
+<th width="25%">方式三：LMArena</th>
+<th width="25%">方式四：官方通道</th>
 </tr>
 <tr>
 <td>
@@ -160,6 +173,18 @@ Gemini 3.0 是 Google 推出的最新一代 AI 大语言模型，具有以下特
 - ✅ 操作简单
 
 **访问**: [MaynorAI](https://maynorai.top/list/#/home)
+
+</td>
+<td>
+
+**推荐指数**: ⭐⭐⭐⭐⭐
+
+**优点**:
+- ✅ API接口
+- ✅ 国内优化
+- ✅ 开发友好
+
+**访问**: [API中转站](https://apipro.maynor1024.live/)
 
 </td>
 <td>
@@ -181,7 +206,7 @@ Gemini 3.0 是 Google 推出的最新一代 AI 大语言模型，具有以下特
 **优点**:
 - ✅ 官方支持
 - ✅ 企业级
-- ✅ API 接口
+- ✅ 完整功能
 
 **访问**: [Vertex AI](https://cloud.google.com/vertex-ai)
 
@@ -320,7 +345,9 @@ Gemini：[修改样式]
 - ⚠️ 注意知识产权问题
 - ⚠️ 遵守平台使用条款
 
-建议使用官方 API 进行商业开发
+**API 开发推荐**:
+- 🔌 [Gemini API 中转站](https://apipro.maynor1024.live/) - 国内优化的 API 服务
+- 🔬 [Google AI Studio](https://aistudio.google.com/) - 官方 API
 </details>
 
 <details>
@@ -332,7 +359,44 @@ Gemini：[修改样式]
 3. 避开高峰时段使用
 4. 考虑使用 API 方式
 
-推荐平台：[MaynorAI](https://maynorai.top/list/#/home)
+**推荐平台**：
+- 🚀 [MaynorAI](https://maynorai.top/list/#/home) - 在线体验
+- 🔌 [API 中转站](https://apipro.maynor1024.live/) - API 接口
+</details>
+
+<details>
+<summary><b>Q6: 如何使用 API 接口？</b></summary>
+
+**步骤**:
+1. 访问 [API 中转站](https://apipro.maynor1024.live/)
+2. 注册账号并获取 API Key
+3. 参考 [API 使用指南](#-api-使用指南)
+4. 开始调用接口
+
+**优势**:
+- ✅ 国内优化，低延迟
+- ✅ 兼容 OpenAI 格式
+- ✅ 支持流式响应
+- ✅ 企业级稳定性
+
+**示例代码**: 查看 [API 调用模板](#-api-调用模板)
+</details>
+
+<details>
+<summary><b>Q7: API 如何计费？</b></summary>
+
+**计费方式**:
+- 💰 按 Token 数量计费
+- 🎁 新用户免费额度
+- 📊 透明的价格体系
+- 💳 多种支付方式
+
+**详细价格**: 访问 [API 中转站](https://apipro.maynor1024.live/) 查看最新定价
+
+**省钱技巧**:
+- 优化提示词，减少 Token 消耗
+- 使用缓存机制
+- 批量处理请求
 </details>
 
 ### 📚 学习路径
@@ -381,6 +445,80 @@ graph LR
 - 📊 商业智能平台
 - 🔐 企业管理系统
 
+---
+
+## 🔌 API 使用指南
+
+### 快速开始
+
+#### 1. 获取 API Key
+
+访问 [API 中转站](https://apipro.maynor1024.live/) 注册并获取你的 API Key。
+
+#### 2. 基础调用
+
+```bash
+# cURL 示例
+curl https://apipro.maynor1024.live/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{
+    "model": "gemini-3.0-pro",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hello, Gemini!"
+      }
+    ]
+  }'
+```
+
+#### 3. 流式响应
+
+```python
+import requests
+
+def stream_chat(prompt):
+    url = "https://apipro.maynor1024.live/v1/chat/completions"
+    headers = {
+        "Authorization": "Bearer YOUR_API_KEY",
+        "Content-Type": "application/json"
+    }
+    data = {
+        "model": "gemini-3.0-pro",
+        "messages": [{"role": "user", "content": prompt}],
+        "stream": True
+    }
+    
+    response = requests.post(url, headers=headers, json=data, stream=True)
+    
+    for line in response.iter_lines():
+        if line:
+            print(line.decode('utf-8'))
+
+stream_chat("请写一个Python排序算法")
+```
+
+### API 特性
+
+| 特性 | 说明 | 支持 |
+|------|------|------|
+| 🚀 **流式响应** | 实时获取生成内容 | ✅ |
+| 🔄 **多轮对话** | 保持上下文连续性 | ✅ |
+| 🖼️ **多模态** | 支持图片输入 | ✅ |
+| 📊 **函数调用** | Function Calling | ✅ |
+| 🌐 **国内优化** | 低延迟高速访问 | ✅ |
+
+### 定价说明
+
+访问 [API 中转站](https://apipro.maynor1024.live/) 查看最新定价。
+
+**优势**:
+- 💰 价格透明，按需付费
+- 🎁 新用户免费额度
+- 📈 企业级稳定性
+- 🛡️ 数据安全保障
+
 ## 📚 文章目录
 
 ### 🎓 入门指南
@@ -411,6 +549,8 @@ graph LR
 17. [Gemini 注册指南](https://xianyu110.github.io/gemini3/articles/gemini-registration.html.html)
 18. [Gemini 安装手册](https://xianyu110.github.io/gemini3/articles/gemini-installation.html.html)
 19. [Gemini API 使用指南](https://xianyu110.github.io/gemini3/articles/gemini-api-guide.html.html)
+
+> 💡 **API 开发者推荐**: 使用 [API 中转站](https://apipro.maynor1024.live/) 获得更好的国内访问体验和更低的延迟
 
 ### 🆚 对比评测
 20. [Gemini vs GPT-4 对比](https://xianyu110.github.io/gemini3/articles/gemini-vs-gpt4.html.html)
@@ -505,6 +645,7 @@ git push origin feature/your-feature
 
 ### 体验平台
 - 🚀 [MaynorAI](https://maynorai.top/list/#/home) - 推荐平台
+- 🔌 [Gemini API 中转站](https://apipro.maynor1024.live/) - API 接口服务
 - 🎮 [LMArena](https://chat.lmsys.org/) - 模型竞技场
 - 🔬 [Google AI Studio](https://aistudio.google.com/) - 官方工具
 
@@ -567,6 +708,15 @@ git push origin feature/your-feature
 4. 其他要求：[特殊需求]
 ```
 
+**示例**:
+```
+请帮我创建一个待办事项应用，要求：
+1. 技术栈：React + TypeScript
+2. 功能：添加、删除、标记完成、筛选
+3. 风格：现代简约，使用蓝色主题
+4. 其他要求：响应式设计，支持本地存储
+```
+
 ### ⚡ 代码优化
 
 ```
@@ -604,6 +754,58 @@ git push origin feature/your-feature
 4. 给出练习建议
 ```
 
+### 🔌 API 调用模板
+
+```python
+# Python 示例 - 使用 API 中转站
+import requests
+
+API_URL = "https://apipro.maynor1024.live/v1/chat/completions"
+API_KEY = "your-api-key"
+
+headers = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+}
+
+data = {
+    "model": "gemini-3.0-pro",
+    "messages": [
+        {"role": "user", "content": "你好，请介绍一下 Gemini 3.0"}
+    ]
+}
+
+response = requests.post(API_URL, headers=headers, json=data)
+print(response.json())
+```
+
+```javascript
+// JavaScript 示例 - 使用 API 中转站
+const API_URL = "https://apipro.maynor1024.live/v1/chat/completions";
+const API_KEY = "your-api-key";
+
+async function callGemini() {
+  const response = await fetch(API_URL, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${API_KEY}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      model: "gemini-3.0-pro",
+      messages: [
+        { role: "user", content: "你好，请介绍一下 Gemini 3.0" }
+      ]
+    })
+  });
+  
+  const data = await response.json();
+  console.log(data);
+}
+
+callGemini();
+```
+
 ---
 
 ## 🔖 快速链接导航
@@ -626,6 +828,7 @@ git push origin feature/your-feature
 ### 🔗 外部资源
 - [Google Gemini 官网](https://gemini.google.com)
 - [MaynorAI 平台](https://maynorai.top/list/#/home)
+- [Gemini API 中转站](https://apipro.maynor1024.live/)
 - [LMArena 竞技场](https://chat.lmsys.org/)
 - [Google AI 文档](https://ai.google.dev/docs)
 - [Vertex AI 平台](https://cloud.google.com/vertex-ai)
@@ -677,16 +880,19 @@ git push origin feature/your-feature
 - [Gemini API 文档](https://ai.google.dev/docs)
 - [Vertex AI 指南](https://cloud.google.com/vertex-ai/docs)
 - [Google AI 博客](https://blog.google/technology/ai/)
+- [API 中转站文档](https://apipro.maynor1024.live/)
 
 ### 🎥 视频教程
 - [Gemini 官方介绍](https://www.youtube.com/watch?v=example)
 - [实战案例分享](https://www.youtube.com/watch?v=example)
 - [API 开发教程](https://www.youtube.com/watch?v=example)
+- [API 中转站使用教程](https://apipro.maynor1024.live/)
 
 ### 📖 推荐阅读
 - [AI 提示词工程](https://www.promptingguide.ai/)
 - [大语言模型原理](https://example.com)
 - [AI 应用开发实践](https://example.com)
+- [Gemini API 最佳实践](https://apipro.maynor1024.live/)
 
 ---
 
