@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini 3.0 详细教程 - 从入门到精通</title>
+    <meta name="description" content="Gemini 3.0完整教程，涵盖基础知识、高级功能、实战案例，助你掌握AI代码生成革命的核心技术">
+    <meta name="keywords" content="Gemini 3.0教程, AI代码生成教程, 谷歌AI学习, 人工智能教程, 编程助手使用指南">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gemini 3.0 详细教程 - 从入门到精通">
+    <meta property="og:description" content="Gemini 3.0完整教程，涵盖基础知识、高级功能、实战案例">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://xianyu110.github.io/gemini3/tutorial.html">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Prism.js for code highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --accent-color: #fbbc05;
+            --warning-color: #ea4335;
+            --dark-bg: #1a1a2e;
+            --light-bg: #ffffff;
+            --section-bg: #f8f9fa;
+            --text-primary: #202124;
+            --text-secondary: #5f6368;
+            --border-color: #dadce0;
+            --code-bg: #2d2d2d;
+            --sidebar-width: 280px;
+            --header-height: 70px;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background: #fafafa;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .header-nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .header-nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Layout */
+        .tutorial-container {
+            display: flex;
+            margin-top: var(--header-height);
+            min-height: calc(100vh - var(--header-height));
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: var(--sidebar-width);
+            background: white;
+            border-right: 1px solid var(--border-color);
+            position: fixed;
+            top: var(--header-height);
+            left: 0;
+            bottom: 0;
+            overflow-y: auto;
+            padding: 30px 0;
+        }
+
+        .sidebar-content {
+            padding: 0 20px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+
+        .sidebar-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            padding: 0 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 2px;
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 10px 15px;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar-nav a:hover {
+            background: var(--section-bg);
+            border-left-color: var(--primary-color);
+        }
+
+        .sidebar-nav a.active {
+            background: rgba(66, 133, 244, 0.1);
+            color: var(--primary-color);
+            border-left-color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .progress-indicator {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--primary-color);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .sidebar-nav a.active .progress-indicator {
+            opacity: 1;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            margin-left: var(--sidebar-width);
+            padding: 40px;
+            max-width: calc(100% - var(--sidebar-width));
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Tutorial Sections */
+        .tutorial-section {
+            background: white;
+            border-radius: 12px;
+            padding: 50px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            scroll-margin-top: calc(var(--header-height) + 20px);
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--section-bg);
+        }
+
+        .section-number {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        /* Content Elements */
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 35px 0 20px 0;
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 25px 0 15px 0;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background: var(--code-bg);
+            border-radius: 8px;
+            margin: 25px 0;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .code-header {
+            background: #1a1a1a;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .code-language {
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .copy-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background: #357ae8;
+        }
+
+        .copy-btn.copied {
+            background: var(--secondary-color);
+        }
+
+        pre {
+            margin: 0 !important;
+            background: transparent !important;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            border-left: 4px solid var(--primary-color);
+            background: rgba(66, 133, 244, 0.1);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--warning-color);
+            background: rgba(234, 67, 53, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--secondary-color);
+            background: rgba(52, 168, 83, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Feature Cards */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: var(--section-bg);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .feature-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--border-color);
+            color: var(--text-primary);
+        }
+
+        .nav-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .nav-btn.next {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .nav-btn.next:hover {
+            background: #357ae8;
+            border-color: #357ae8;
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+
+        /* Table of Contents */
+        .toc-section {
+            background: var(--section-bg);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .toc-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .toc-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc-list li {
+            margin-bottom: 12px;
+        }
+
+        .toc-list a {
+            color: var(--text-primary);
+            text-decoration: none;
+            padding: 8px 0;
+            display: block;
+            border-left: 3px solid transparent;
+            padding-left: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .toc-list a:hover {
+            color: var(--primary-color);
+            border-left-color: var(--primary-color);
+            background: white;
+            border-radius: 0 6px 6px 0;
+        }
+
+        /* Interactive Demo */
+        .demo-container {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 40px;
+            margin: 30px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .demo-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            font-size: 1rem;
+        }
+
+        .demo-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .demo-btn {
+            background: white;
+            color: var(--primary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .demo-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+                max-width: 100%;
+                padding: 20px;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .tutorial-section {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                padding: 0 15px;
+            }
+
+            .header-nav {
+                display: none;
+            }
+
+            .main-content {
+                padding: 15px;
+            }
+
+            .tutorial-section {
+                padding: 25px;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .tutorial-section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Scroll Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--primary-color);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+            z-index: 1001;
+        }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <i class="fas fa-robot"></i>
+                Gemini 3.0 教程
+            </a>
+            <nav class="header-nav">
+                <a href="index.html">首页</a>
+                <a href="tutorial.html" class="active">教程</a>
+                <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a>
+                <a href="https://xianyu110.github.io/gemini3/" target="_blank">演示</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="tutorial-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <!-- 快速导航 -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title">快速导航</div>
+                    <ul class="sidebar-nav">
+                        <li><a href="#overview" class="nav-link"><div class="progress-indicator"></div>概述介绍</a></li>
+                        <li><a href="#getting-started" class="nav-link"><div class="progress-indicator"></div>快速开始</a></li>
+                        <li><a href="#basic-concepts" class="nav-link"><div class="progress-indicator"></div>基础概念</a></li>
+                        <li><a href="#advanced-features" class="nav-link"><div class="progress-indicator"></div>高级功能</a></li>
+                        <li><a href="#practical-examples" class="nav-link"><div class="progress-indicator"></div>实战案例</a></li>
+                        <li><a href="#best-practices" class="nav-link"><div class="progress-indicator"></div>最佳实践</a></li>
+                        <li><a href="#troubleshooting" class="nav-link"><div class="progress-indicator"></div>问题解答</a></li>
+                    </ul>
+                </div>
+
+                <!-- 访问方式 -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title">访问方式</div>
+                    <ul class="sidebar-nav">
+                        <li><a href="#method-third-party"><div class="progress-indicator"></div>第三方平台</a></li>
+                        <li><a href="#method-lmarena"><div class="progress-indicator"></div>LMArena平台</a></li>
+                        <li><a href="#method-official"><div class="progress-indicator"></div>官方通道</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+
+                <!-- 概述介绍 -->
+                <section class="tutorial-section" id="overview">
+                    <div class="section-header">
+                        <div class="section-number">01</div>
+                        <h1 class="section-title">概述介绍</h1>
+                        <p class="section-subtitle">了解Gemini 3.0的革命性特点和核心优势</p>
+                    </div>
+
+                    <div class="toc-section">
+                        <h3 class="toc-title">📑 本节内容</h3>
+                        <ul class="toc-list">
+                            <li><a href="#what-is-gemini30">什么是Gemini 3.0？</a></li>
+                            <li><a href="#key-features">核心特点</a></li>
+                            <li><a href="#why-revolutionary">为什么具有革命性？</a></li>
+                            <li><a href="#use-cases">应用场景</a></li>
+                        </ul>
+                    </div>
+
+                    <h3 id="what-is-gemini30">🤖 什么是Gemini 3.0？</h3>
+                    <p>Gemini 3.0是谷歌发布的最新一代人工智能大语言模型，代表了AI代码生成能力的重大突破。它不仅具备强大的自然语言理解和生成能力，更重要的是在代码开发、多模态处理和复杂推理方面达到了前所未有的高度。</p>
+
+                    <div class="info-box success">
+                        <div class="info-box-title">
+                            <i class="fas fa-star"></i>
+                            革命性突破
+                        </div>
+                        <p>Gemini 3.0可以在<strong>2分钟内生成一个功能完整的网页版macOS操作系统</strong>，包含数千行代码，展示了其在复杂项目生成方面的卓越能力。</p>
+                    </div>
+
+                    <h3 id="key-features">✨ 核心特点</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔥</div>
+                            <h4 class="feature-title">超强代码生成</h4>
+                            <p class="feature-description">能够生成2000+行复杂前端代码，具备强大的自我纠错机制，确保代码的可用性和质量。</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🧠</div>
+                            <h4 class="feature-title">深度思考架构</h4>
+                            <p class="feature-description">基于升级版MoE架构，擅长长逻辑链推理和复杂任务拆解，能够处理多步骤的复杂问题。</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🌐</div>
+                            <h4 class="feature-title">实时知识库</h4>
+                            <p class="feature-description">背靠谷歌搜索，拥有更新至2025年的实时联网检索能力，获取最新、最全面的信息。</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎨</div>
+                            <h4 class="feature-title">多模态交互</h4>
+                            <p class="feature-description">精细的SVG图像生成，精准的手写识别，支持文本、图像、代码的全方位处理。</p>
+                        </div>
+                    </div>
+
+                    <h3 id="why-revolutionary">🚀 为什么具有革命性？</h3>
+                    <p>Gemini 3.0的革命性体现在以下几个方面：</p>
+                    <ul>
+                        <li><strong>从玩具到工具的转变：</strong>AI不再是简单的文本生成工具，而是能够完成复杂工程项目的开发助手</li>
+                        <li><strong>质的飞跃：</strong>代码生成的质量和长度都达到了新的高度，能够处理实际的生产项目</li>
+                        <li><strong>开发效率革命：</strong>传统需要数周完成的项目，现在可能在几分钟内完成</li>
+                        <li><strong>降低门槛：</strong>让非专业开发者也能创建复杂的应用程序</li>
+                    </ul>
+
+                    <h3 id="use-cases">💡 应用场景</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">应用场景示例</span>
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <i class="fas fa-copy"></i> 复制
+                            </button>
+                        </div>
+                        <pre><code class="language-text">• Web应用开发 - 快速原型制作和完整应用构建
+• 移动应用开发 - 跨平台应用代码生成
+• 数据分析 - 复杂数据处理脚本和可视化
+• 自动化工具 - 工作流优化和自动化脚本
+• 教育培训 - 编程教学和代码示例生成
+• 内容创作 - 技术文档和教程编写</code></pre>
+                    </div>
+                </section>
+
+                <!-- 快速开始 -->
+                <section class="tutorial-section" id="getting-started">
+                    <div class="section-header">
+                        <div class="section-number">02</div>
+                        <h1 class="section-title">快速开始</h1>
+                        <p class="section-subtitle">三种主要方式体验Gemini 3.0的强大功能</p>
+                    </div>
+
+                    <h3 id="method-third-party">🎯 方法一：第三方聚合平台</h3>
+                    <p>对于希望快速上手的用户，第三方聚合平台是最便捷的选择。</p>
+
+                    <div class="info-box">
+                        <div class="info-box-title">
+                            <i class="fas fa-info-circle"></i>
+                            推荐平台：MaynorAI
+                        </div>
+                        <p><strong>访问地址：</strong> <a href="https://maynorai.top/list/#/home" target="_blank" style="color: var(--primary-color);">https://maynorai.top/list/#/home</a></p>
+                    </div>
+
+                    <h4>✨ 优势特点</h4>
+                    <ul>
+                        <li>✅ 可能无需特殊网络环境</li>
+                        <li>✅ 提供免费试用额度</li>
+                        <li>✅ 界面友好，操作简单</li>
+                        <li>✅ 通常第一时间接入最新模型</li>
+                    </ul>
+
+                    <h4>⚠️ 注意事项</h4>
+                    <div class="info-box warning">
+                        <div class="info-box-title">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            安全提醒
+                        </div>
+                        <p>使用第三方平台时，请注意甄别平台信誉度，数据安全性需要自行评估。建议选择知名度高、用户评价好的平台。</p>
+                    </div>
+
+                    <div class="demo-container">
+                        <h3>🚀 立即体验</h3>
+                        <p>在MaynorAI平台上选择Gemini 3.0模型，开始你的AI代码生成之旅！</p>
+                        <input type="text" class="demo-input" placeholder="输入你想要创建的项目描述..." id="demoInput">
+                        <button class="demo-btn" onclick="startDemo()">生成代码</button>
+                    </div>
+
+                    <h3 id="method-lmarena">🎮 方法二：LMArena匿名对战平台</h3>
+                    <p>LMArena是一个有趣的"大模型竞技场"，你可以通过"开盲盒"的方式体验各种AI模型。</p>
+
+                    <div class="info-box">
+                        <div class="info-box-title">
+                            <i class="fas fa-gamepad"></i>
+                            平台特色
+                        </div>
+                        <p><strong>访问地址：</strong> <a href="https://chat.lmsys.org/" target="_blank" style="color: var(--primary-color);">https://chat.lmsys.org/</a></p>
+                    </div>
+
+                    <h4>🎯 使用体验</h4>
+                    <ul>
+                        <li>🔍 随机匹配两个匿名AI模型进行对比</li>
+                        <li>📊 可以直观比较不同模型的表现差异</li>
+                        <li>🏆 由斯坦福大学等知名机构支持</li>
+                        <li>🎲 增加了使用的趣味性和探索性</li>
+                    </ul>
+
+                    <h3 id="method-official">🏢 方法三：开发者官方通道</h3>
+                    <p>对于专业开发者和企业用户，官方通道提供了最稳定和功能最完整的服务。</p>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h4 class="feature-title">🔧 Gemini CLI</h4>
+                            <p class="feature-description">命令行工具，适合开发者集成到工作流中</p>
+                            <p><strong>访问：</strong> <a href="https://ai.google.dev/edge" target="_blank" style="color: var(--primary-color);">ai.google.dev/edge</a></p>
+                        </div>
+                        <div class="feature-card">
+                            <h4 class="feature-title">☁️ Vertex AI</h4>
+                            <p class="feature-description">企业级AI平台，提供完整的管理和监控功能</p>
+                            <p><strong>访问：</strong> <a href="https://cloud.google.com/vertex-ai" target="_blank" style="color: var(--primary-color);">cloud.google.com/vertex-ai</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-box warning">
+                        <div class="info-box-title">
+                            <i class="fas fa-dollar-sign"></i>
+                            费用说明
+                        </div>
+                        <p>官方通道通常需要付费订阅，适合有长期需求和专业开发场景的用户。</p>
+                    </div>
+
+                    <div class="nav-buttons">
+                        <a href="#overview" class="nav-btn">
+                            <i class="fas fa-arrow-left"></i>
+                            上一节：概述介绍
+                        </a>
+                        <a href="#basic-concepts" class="nav-btn next">
+                            下一节：基础概念
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- 基础概念 -->
+                <section class="tutorial-section" id="basic-concepts">
+                    <div class="section-header">
+                        <div class="section-number">03</div>
+                        <h1 class="section-title">基础概念</h1>
+                        <p class="section-subtitle">掌握Gemini 3.0的核心概念和基本原理</p>
+                    </div>
+
+                    <h3>🧠 理解AI模型架构</h3>
+                    <p>Gemini 3.0基于先进的MoE（Mixture of Experts）架构，这种架构使其能够更有效地处理复杂任务。</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">MoE架构原理</span>
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <i class="fas fa-copy"></i> 复制
+                            </button>
+                        </div>
+                        <pre><code class="language-text">传统架构：
+输入 → 单一大型模型 → 输出
+
+MoE架构：
+输入 → 路由器 → 专业模型组合 → 输出
+         ↓
+    根据任务类型选择最适合的专家模型</code></pre>
+                    </div>
+
+                    <h3>💬 提示词工程基础</h3>
+                    <p>有效的提示词是与Gemini 3.0交互的关键。以下是一些基本原则：</p>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h4 class="feature-title">明确性</h4>
+                            <p class="feature-description">提供清晰、具体的目标描述，避免模糊不清的表达</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📋</div>
+                            <h4 class="feature-title">结构化</h4>
+                            <p class="feature-description">使用结构化的格式，如分步骤、使用项目符号等</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔄</div>
+                            <h4 class="feature-title">迭代优化</h4>
+                            <p class="feature-description">根据输出结果不断调整和优化提示词</p>
+                        </div>
+                    </div>
+
+                    <div class="nav-buttons">
+                        <a href="#getting-started" class="nav-btn">
+                            <i class="fas fa-arrow-left"></i>
+                            上一节：快速开始
+                        </a>
+                        <a href="#advanced-features" class="nav-btn next">
+                            下一节：高级功能
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- 更多章节可以继续添加 -->
+                <!-- 高级功能、实战案例、最佳实践、问题解答等 -->
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 1024) {
+                if (!sidebar.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                    sidebar.classList.remove('active');
+                }
+            }
+        });
+
+        // Active navigation link
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('.tutorial-section');
+            const scrollPos = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                const id = section.getAttribute('id');
+
+                if (scrollPos >= top && scrollPos < top + height) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Smooth scroll for navigation links
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 100;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    sidebar.classList.remove('active');
+                }
+            });
+        });
+
+        // Progress bar
+        function updateProgressBar() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.transform = `scaleX(${scrolled / 100})`;
+        }
+
+        window.addEventListener('scroll', updateProgressBar);
+
+        // Copy code functionality
+        function copyCode(button) {
+            const codeBlock = button.closest('.code-block').querySelector('code');
+            const text = codeBlock.textContent;
+
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i> 已复制';
+                button.classList.add('copied');
+
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            });
+        }
+
+        // Demo functionality
+        function startDemo() {
+            const input = document.getElementById('demoInput').value;
+            if (input.trim()) {
+                alert(`正在使用Gemini 3.0生成：${input}\n\n请前往MaynorAI平台体验完整功能！`);
+                window.open('https://maynorai.top/list/#/home', '_blank');
+            } else {
+                alert('请输入项目描述！');
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateActiveNav();
+            updateProgressBar();
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1024) {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
