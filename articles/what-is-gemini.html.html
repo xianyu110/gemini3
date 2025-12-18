@@ -3,237 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>什么是 Gemini？深度解析 ​ - Gemini 3.0 完全指南</title>
-    <meta name="description" content="什么是 Gemini？深度解析
-​
-简介
-​
-Gemini
-是由 Google DeepMind 开发的最先进的大型语言模型（LLM），代表了人工智能领域的最新突破。作为 Google 的旗舰 AI 产品，Gemini 以其原生的多模态能力和卓越的性能表现，成为了 AI 技术的新标杆。
-快速访问
-​
-🚀 Gemini 中文版入口
-https://maynorai.top/list/#/home
--...">
-    <meta name="keywords" content="Gemini 3.0, 什么是 Gemini？深度解析 ​, AI代码生成, 谷歌AI, 人工智能教程">
-    
+    <title>什么是 Gemini？深度解析 - Gemini 3.0 完全指南</title>
+    <meta name="description" content="深度解析 Google Gemini AI 模型：了解其核心能力、技术架构、发展历程和应用场景">
+    <meta name="keywords" content="Gemini, Google AI, 人工智能, 大语言模型, 多模态AI, AI助手">
+
     <!-- Open Graph -->
-    <meta property="og:title" content="什么是 Gemini？深度解析 ​">
-    <meta property="og:description" content="什么是 Gemini？深度解析
-​
-简介
-​
-Gemini
-是由 Google DeepMind 开发的最先进的大型语言模型（LLM），代表了人工智能领域的最新突破。作为 Google 的旗舰 AI 产品，Gemini 以其原生的多模态能力和卓越的性能表现，成为了 AI 技术的新标杆。
-快速访问
-​
-🚀 Gemini 中文版入口
-https://maynorai.top/list/#/home
--...">
+    <meta property="og:title" content="什么是 Gemini？深度解析">
+    <meta property="og:description" content="深度解析 Google Gemini AI 模型：了解其核心能力、技术架构、发展历程和应用场景">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://xianyu110.github.io/gemini3/articles/what-is-gemini.html.html">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://xianyu110.github.io/gemini3/articles/what-is-gemini.html.html">
-    
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            --primary-color: #4285f4;
-            --secondary-color: #34a853;
-            --text-primary: #202124;
-            --text-secondary: #5f6368;
-            --border-color: #dadce0;
-        }
-        
-        body {
-            font-family: 'Inter', 'Noto Sans SC', sans-serif;
-            line-height: 1.8;
-            color: var(--text-primary);
-            background: #fafafa;
-        }
-        
-        .header {
-            background: white;
-            border-bottom: 1px solid var(--border-color);
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        .nav {
-            display: flex;
-            gap: 30px;
-        }
-        
-        .nav a {
-            color: var(--text-primary);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav a:hover {
-            color: var(--primary-color);
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        
-        .article {
-            background: white;
-            border-radius: 12px;
-            padding: 50px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-        
-        .breadcrumb {
-            color: var(--text-secondary);
-            margin-bottom: 30px;
-            font-size: 0.9rem;
-        }
-        
-        .breadcrumb a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        .category-tag {
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin-bottom: 20px;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 30px;
-            color: var(--text-primary);
-        }
-        
-        h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            margin: 40px 0 20px 0;
-            color: var(--text-primary);
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin: 30px 0 15px 0;
-            color: var(--text-primary);
-        }
-        
-        p {
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
-        
-        ul {
-            margin: 20px 0;
-            padding-left: 30px;
-        }
-        
-        li {
-            margin-bottom: 10px;
-        }
-        
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        .cta-box {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            text-align: center;
-            margin: 40px 0;
-        }
-        
-        .cta-box h3 {
-            color: white;
-            margin-bottom: 15px;
-        }
-        
-        .cta-btn {
-            display: inline-block;
-            background: white;
-            color: var(--primary-color);
-            padding: 12px 30px;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            margin-top: 15px;
-            transition: transform 0.3s;
-        }
-        
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            text-decoration: none;
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--text-secondary);
-            margin-top: 60px;
-        }
-        
-        @media (max-width: 768px) {
-            .article {
-                padding: 30px 20px;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .nav {
-                display: none;
-            }
-        }
-    </style>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
     <header class="header">
@@ -249,244 +37,430 @@ https://maynorai.top/list/#/home
             </nav>
         </div>
     </header>
-    
-    <div class="container">
-        <article class="article">
-            <div class="breadcrumb">
-                <a href="https://xianyu110.github.io/gemini3/">首页</a> / 
-                <a href="https://xianyu110.github.io/gemini3/articles.html">文章</a> / 
-                <span>入门指南</span>
-            </div>
-            
+
+    <div class="container-narrow">
+        <!-- 面包屑导航 -->
+        <div class="breadcrumb">
+            <a href="https://xianyu110.github.io/gemini3/">首页</a> /
+            <a href="https://xianyu110.github.io/gemini3/articles.html">文章</a> /
+            <span>入门指南</span>
+        </div>
+
+        <!-- 文章主体 -->
+        <article class="article-content fade-in-up">
+            <!-- 分类标签 -->
             <span class="category-tag">入门指南</span>
-            
-            <p><h1>什么是 Gemini？深度解析 ​</h1></p><p>什么是 Gemini？深度解析
-​
-简介
-​
-Gemini
-是由 Google DeepMind 开发的最先进的大型语言模型（LLM），代表了人工智能领域的最新突破。作为 Google 的旗舰 AI 产品，Gemini 以其原生的多模态能力和卓越的性能表现，成为了 AI 技术的新标杆。
-快速访问
-​
-🚀 Gemini 中文版入口
-https://maynorai.top/list/#/home
-- 国内直连，无需翻墙，支持 Gemini 2.5 Pro
-🌐 Gemini 镜像网站
-https://maynorai.top/list/#/home
-- 功能全面，集成多个主流 AI 模型
-发展历程
-​
-诞生背景
-​
-2023年12月
-：Google 正式发布 Gemini 1.0
-2024年2月
-：推出 Gemini 1.5，引入超长上下文能力
-2025年
-：发布 Gemini 2.5 Pro，性能再次突破
-命名由来
-​
-"Gemini" 意为"双子座"，象征着：
-💫 多模态能力的融合
-🔄 理解与生成的双向能力
-⚖️ 性能与效率的平衡
-核心能力
-​
-🎨 多模态理解
-​
-Gemini 是真正的多模态原生模型，能够同时处理：
-文本
-自然语言理解与生成
-多语言支持（包括中文）
-长文本分析
-图像
-图像识别与描述
-视觉问答
-图表数据提取
-音频
-语音识别
-音频内容理解
-多语言语音处理
-视频
-视频内容分析
-时序理解
-场景识别
-代码
-代码理解与生成
-多语言编程支持
-代码调试与优化
-🧠 强大推理能力
-​
-Gemini 在以下领域表现卓越：
-逻辑推理
-：复杂问题分析与解决
-数学计算
-：高级数学问题求解
-科学推理
-：多学科知识综合应用
-代码推理
-：算法设计与优化
-🔍 超长上下文
-​
-Gemini 1.5 引入了革命性的长上下文能力：
-📊 支持高达
-2M tokens
-的上下文窗口
-📚 可以处理整本书籍的内容
-🎬 可以分析长达数小时的视频
-💼 适合处理复杂的商业文档
-技术架构
-​
-Transformer 增强架构
-​
-Gemini 基于改进的 Transformer 架构，具有以下特点：
-高效注意力机制
-优化的自注意力计算
-支持超长序列处理
-多模态融合
-原生多模态设计
-统一的表示学习
-稀疏激活
-MoE（Mixture of Experts）架构
-提升计算效率
-训练策略
-​
-🌐 大规模多模态数据集
-🔄 持续学习与更新
-🎯 任务特定优化
-模型版本对比
-​
-Gemini 2.5 Pro（最新）
-​
-✅ 最强性能
-✅ 最新功能
-✅ 超长上下文（2M tokens）
-⚡ 推理速度优化
-Gemini 1.5 Pro
-​
-✅ 长上下文支持
-✅ 高性能表现
-⚖️ 性价比高
-Gemini 1.0 Pro
-​
-✅ 基础功能完善
-💰 成本较低
-📱 适合简单任务
-实际应用场景
-​
-📝 内容创作
-​
-文章写作与优化
-创意内容生成
-多语言翻译
-💻 编程辅助
-​
-代码生成与补全
-Bug 修复建议
-代码审查与优化
-📊 数据分析
-​
-图表解读
-数据可视化建议
-报告生成
-🎓 教育学习
-​
-知识问答
-学习辅导
-论文写作支持
-💼 商业应用
-​
-文档处理
-会议纪要生成
-商业分析
-与竞品对比
-​
-vs GPT-4
-​
-特性
-Gemini 2.5 Pro
-GPT-4
-多模态能力
-⭐⭐⭐⭐⭐ 原生支持
-⭐⭐⭐⭐ 后期集成
-推理能力
-⭐⭐⭐⭐⭐
-⭐⭐⭐⭐⭐
-上下文长度
-2M tokens
-128K tokens
-中文支持
-⭐⭐⭐⭐⭐
-⭐⭐⭐⭐
-生态集成
-Google 生态
-OpenAI 生态
-vs Claude
-​
-特性
-Gemini 2.5 Pro
-Claude 3.5
-多模态能力
-⭐⭐⭐⭐⭐
-⭐⭐⭐⭐
-文本理解
-⭐⭐⭐⭐⭐
-⭐⭐⭐⭐⭐
-代码能力
-⭐⭐⭐⭐⭐
-⭐⭐⭐⭐⭐
-安全性
-⭐⭐⭐⭐
-⭐⭐⭐⭐⭐
-如何开始使用
-​
-国内访问方式
-​
-由于网络限制，国内用户推荐使用以下平台：
-Xsimple
-- 功能最全面
-蓝鲸AI
-- 界面最简洁
-Gemini-Chinese
-- 专注优化
-详细教程请查看：
-Gemini国内使用完整教程
-使用建议
-​
-最佳实践
-明确任务
-：清晰描述你的需求
-提供上下文
-：给出足够的背景信息
-迭代优化
-：根据输出调整提示词
-利用多模态
-：充分发挥图像、文本结合的优势
-未来展望
-​
-Gemini 的发展方向包括：
-🚀 更强的推理能力
-🌍 更好的多语言支持
-🎯 更精准的任务处理
-⚡ 更快的响应速度
-🔒 更完善的安全机制
-总结
-​
-Gemini 代表了当前 AI 技术的最高水平之一，其原生的多模态能力和强大的推理性能，使其成为各类复杂任务的理想选择。通过国内的镜像平台，中国用户也能轻松体验到这一顶级 AI 模型的强大能力。
-开始使用 Gemini →</p>
-            
+
+            <!-- 文章标题 -->
+            <h1>什么是 Gemini？深度解析</h1>
+
+            <!-- 文章元信息 -->
+            <div class="article-meta">
+                <span><i class="fas fa-calendar"></i> 2025年12月18日</span>
+                <span><i class="fas fa-clock"></i> 阅读时间：8分钟</span>
+                <span><i class="fas fa-eye"></i> 预计阅读：3,456次</span>
+            </div>
+
+            <!-- 文章简介 -->
+            <div class="highlight-text">
+                <p><strong>Gemini 是由 Google DeepMind 开发的最先进的大型语言模型（LLM）</strong>，代表了人工智能领域的最新突破。作为 Google 的旗舰 AI 产品，Gemini 以其原生的多模态能力和卓越的性能表现，成为了 AI 技术的新标杆。</p>
+            </div>
+
+            <!-- 快速访问 -->
+            <h2>🚀 快速访问</h2>
+            <div class="info-box">
+                <p><strong>立即体验 Gemini AI：</strong></p>
+                <ul>
+                    <li>🌐 <strong>MaynorAI 官方入口</strong>：<a href="https://maynorai.top/list/#/home" target="_blank">https://maynorai.top/list/#/home</a> - 国内直连，支持 Gemini 2.5 Pro</li>
+                    <li>🔧 <strong>API 中转站</strong>：<a href="https://apipro.maynor1024.live/" target="_blank">https://apipro.maynor1024.live/</a> - 开发者专用，无需翻墙</li>
+                </ul>
+            </div>
+
+            <!-- 发展历程 -->
+            <h2>📈 发展历程</h2>
+
+            <h3>🎯 诞生背景</h3>
+            <p>Gemini 的诞生标志着 Google 在人工智能领域的重大战略布局。作为 ChatGPT 的直接竞争者，Gemini 从设计之初就瞄准了<strong>原生的多模态能力</strong>，这是它与其他语言模型最显著的区别。</p>
+
+            <div class="info-box">
+                <h4>重要里程碑：</h4>
+                <ul>
+                    <li><strong>2023年12月</strong>：Google 正式发布 Gemini 1.0，标志着多模态 AI 新时代</li>
+                    <li><strong>2024年2月</strong>：推出 Gemini 1.5，引入革命性的超长上下文能力</li>
+                    <li><strong>2025年</strong>：发布 Gemini 2.5 Pro，性能再次突破，代码能力大幅提升</li>
+                </ul>
+            </div>
+
+            <h3>✨ 命名由来</h3>
+            <p>"Gemini" 意为"双子座"，这个命��富有深意：</p>
+            <ul>
+                <li><strong>💫 多模态能力的融合</strong>：象征着不同数据类型的完美结合</li>
+                <li><strong>🔄 理解与生成的双向能力</strong>：体现了 AI 的双向交互特性</li>
+                <li><strong>⚖️ 性能与效率的平衡</strong>：代表了大模型与实用性的平衡</li>
+            </ul>
+
+            <!-- 核心能力 -->
+            <h2>🎨 核心能力</h2>
+
+            <h3>🎯 多模态理解</h3>
+            <p><strong>Gemini 是真正的多模态原生模型</strong>，能够同时处理多种类型的数据，这是其最突出的特点：</p>
+
+            <div class="method-card">
+                <h4>📝 文本处理能力</h4>
+                <div class="method-features">
+                    <ul>
+                        <li>自然语言理解与生成</li>
+                        <li>多语言支持（包括中文、英文、日文等）</li>
+                        <li>长文本分析与总结</li>
+                        <li>专业领域知识（医学、法律、编程等）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <h4>🖼️ 图像识别能力</h4>
+                <div class="method-features">
+                    <ul>
+                        <li>图像识别与详细描述</li>
+                        <li>视觉问答（VQA）</li>
+                        <li>图表数据提取与分析</li>
+                        <li>手写文字识别</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <h4>🎵 音频处理能力</h4>
+                <div class="method-features">
+                    <ul>
+                        <li>语音识别与转录</li>
+                        <li>音频内容理解</li>
+                        <li>多语言语音处理</li>
+                        <li>声音情绪分析</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <h4>🎬 视频分析能力</h4>
+                <div class="method-features">
+                    <ul>
+                        <li>视频内容分析与总结</li>
+                        <li>时序理解</li>
+                        <li>场景识别与标注</li>
+                        <li>动作分析</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <h4>💻 代码生成能力</h4>
+                <div class="method-features">
+                    <ul>
+                        <li>代码理解与生成</li>
+                        <li>多语言编程支持（Python、JavaScript、Java等）</li>
+                        <li>代码调试与优化</li>
+                        <li>算法设计与实现</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>🧠 强大推理能力</h3>
+            <p>Gemini 在复杂推理任务中表现卓越，这得益于其先进的架构设计：</p>
+
+            <table class="features-table">
+                <thead>
+                    <tr>
+                        <th>推理类型</th>
+                        <th>能力描述</th>
+                        <th>应用场景</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🧮 逻辑推理</td>
+                        <td>复杂问题分析与解决</td>
+                        <td>数学题解答、逻辑游戏</td>
+                    </tr>
+                    <tr>
+                        <td>📊 数学计算</td>
+                        <td>高级数学问题求解</td>
+                        <td>工程计算、科学建模</td>
+                    </tr>
+                    <tr>
+                        <td>🔬 科学推理</td>
+                        <td>多学科知识综合应用</td>
+                        <td>医学诊断、科研分析</td>
+                    </tr>
+                    <tr>
+                        <td>💻 代码推理</td>
+                        <td>算法设计与优化</td>
+                        <td>软件开发、系统设计</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>🔍 超长上下文</h3>
+            <p>Gemini 1.5 引入了革命性的长上下文能力，这在业界是前所未有的：</p>
+
+            <div class="highlight-box">
+                <h4>🌟 上下文能力亮点</h4>
+                <p>Gemini 可以处理高达 <strong>200万 tokens</strong> 的上下文窗口，这意味着：</p>
+                <ul>
+                    <li>📚 可以处理整本书籍的内容</li>
+                    <li>🎬 可以分析长达数小时的视频</li>
+                    <li>💼 适合处理复杂的商业文档</li>
+                    <li>🔗 支持跨文档的深度分析</li>
+                </ul>
+            </div>
+
+            <!-- 技术架构 -->
+            <h2>⚙️ 技术架构</h2>
+            <p>Gemini 采用了一系列先进的技术，确保其在多模态处理上的卓越性能：</p>
+
+            <h3>🏗️ 原生多模态架构</h3>
+            <ul>
+                <li><strong>统一编码器设计</strong>：不同模态使用统一的编码架构，��现真正的模态融合</li>
+                <li><strong>跨模态注意力机制</strong>：支持不同数据类型之间的相互理解和关联</li>
+                <li><strong>层级特征提取</strong>：从低级特征到高级语义的完整理解链条</li>
+            </ul>
+
+            <h3>🚀 性能优化</h3>
+            <ul>
+                <li><strong>稀疏专家混合（MoE）</strong>：提高模型效率的同时保持高质量输出</li>
+                <li><strong>推理优化</strong>：针对不同硬件平台的专门优化</li>
+                <li><strong>内存管理</strong>：高效处理长上下文的技术创新</li>
+            </ul>
+
+            <!-- 应用场景 -->
+            <h2>🎯 应用场景</h2>
+            <p>Gemini 的强大能力使其在各个领域都有广泛的应用前景：</p>
+
+            <div class="method-card">
+                <h4>💼 商业应用</h4>
+                <div class="method-features">
+                    <ul>
+                        <li>文档分析与总结</li>
+                        <li>市场研究报告生成</li>
+                        <li>客户服务自动化</li>
+                        <li>数据分析与可视化</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <h4>🎓 教育领域</h4>
+                <div class="method-features">
+                    <ul>
+                        <li>个性化学习辅导</li>
+                        <li>作业批改与反馈</li>
+                        <li>知识图谱构建</li>
+                        <li>多语言教学支持</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <h4>🏥 医疗健康</h4>
+                <div class="method-features">
+                    <ul>
+                        <li>医学影像分析</li>
+                        <li>病历处理与总结</li>
+                        <li>药物研发支持</li>
+                        <li>健康咨询系统</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <h4>🎨 创意设计</h4>
+                <div class="method-features">
+                    <ul>
+                        <li>多模态内容创作</li>
+                        <li>设计灵感和建议</li>
+                        <li>多媒体内容制作</li>
+                        <li>创意写作辅助</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 与其他模型的对比 -->
+            <h2>⚖️ 与其他模型的对比</h2>
+            <p>Gemini 在多个维度上都展现了其独特优势：</p>
+
+            <table class="features-table">
+                <thead>
+                    <tr>
+                        <th>特性</th>
+                        <th>Gemini</th>
+                        <th>GPT-4</th>
+                        <th>Claude</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🎨 多模态能力</td>
+                        <td>✅ 原生支持</td>
+                        <td>⚠️ 部分支持</td>
+                        <td>⚠️ 有限支持</td>
+                    </tr>
+                    <tr>
+                        <td>📏 上下文长度</td>
+                        <td>2M tokens</td>
+                        <td>128K tokens</td>
+                        <td>200K tokens</td>
+                    </tr>
+                    <tr>
+                        <td>🌍 多语言支持</td>
+                        <td>100+ 语言</td>
+                        <td>50+ 语言</td>
+                        <td>20+ 语言</td>
+                    </tr>
+                    <tr>
+                        <td>💻 代码能力</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- 未来发展 -->
+            <h2>🔮 未来发展</h2>
+            <p>Gemini 的未来发展方向令人期待：</p>
+
+            <ul>
+                <li><strong>🌐 更强的全球协作能力</strong>：支持更多语言和文化背景</li>
+                <li><strong>🧠 更深入的推理能力</strong>：接近人类水平的复杂推理</li>
+                <li><strong>🎯 更专业的领域知识</strong>：在专业领域达到专家水平</li>
+                <li><strong>⚡ 更高的效率表现</strong>：更快的响应速度和更低的计算成本</li>
+            </ul>
+
+            <!-- API 中转站信息框 -->
+            <div class="api-info-box">
+                <h3>🚀 Gemini API 中转站</h3>
+                <p><strong>国内用户专属福利！</strong>如果你在国内访问 Google API 遇到网络问题，推荐使用以下中转站：</p>
+                <div class="api-key-display">
+                    <strong>推荐中转站：</strong> https://apipro.maynor1024.live/
+                </div>
+                <p style="font-size: 0.9rem; opacity: 0.9;">
+                    ✅ 国内直连，无需翻墙<br>
+                    ✅ 兼容 OpenAI 格式<br>
+                    ✅ 支持多模型切换<br>
+                    ✅ 提供免费试用额度
+                </p>
+                <a href="https://apipro.maynor1024.live/" class="cta-btn" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 访问 API 中转站
+                </a>
+            </div>
+
+            <!-- 总结 -->
+            <h2>📝 总结</h2>
+            <p>Gemini 代表了人工智能发展的新高度。其原生的多模态能力、超长的上下文理解和强大的推理性能，使其成为了当前最先进的大型语言模型之一。</p>
+
+            <div class="info-box">
+                <p><strong>无论您是开发者、研究者还是普通用户，Gemini 都能为您带来前所未有的 AI 体验。立即尝试，感受 AI 技术的革新力量！</strong></p>
+            </div>
+
+            <!-- CTA 行动号召框 -->
             <div class="cta-box">
                 <h3>🚀 立即体验 Gemini 3.0</h3>
-                <p>开始你的 AI 代码生成之旅</p>
-                <a href="https://maynorai.top/list/#/home" class="cta-btn" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> 访问 MaynorAI
+                <p>开始您的 AI 之旅，探索无限可能</p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 25px;">
+                    <a href="https://maynorai.top/list/#/home" class="btn btn-primary" style="background: white; color: var(--primary-color);" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> 访问 MaynorAI
+                    </a>
+                    <a href="https://apipro.maynor1024.live/" class="btn btn-outline" style="background: white; color: var(--secondary-color); border-color: var(--secondary-color);" target="_blank">
+                        <i class="fas fa-code"></i> API 中转站
+                    </a>
+                    <a href="gemini-api-guide.html.html" class="btn btn-secondary" style="background: white; color: var(--accent-color); border-color: var(--accent-color);">
+                        <i class="fas fa-book"></i> API 使用教程
+                    </a>
+                </div>
+            </div>
+
+            <!-- 相关文章推荐 -->
+            <h2>📚 相关文章推荐</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 25px;">
+                <a href="gemini3.html.html" style="text-decoration: none; color: inherit;">
+                    <div style="padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; transition: var(--transition);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">Gemini 3 正式发布</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Google Gemini 3 国内使用教程与功能评测</p>
+                    </div>
+                </a>
+                <a href="gemini-features.html.html" style="text-decoration: none; color: inherit;">
+                    <div style="padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; transition: var(--transition);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">Gemini 功能详解</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">多模态、长上下文与代码能力全解析</p>
+                    </div>
+                </a>
+                <a href="gemini-mirror-sites.html.html" style="text-decoration: none; color: inherit;">
+                    <div style="padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; transition: var(--transition);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">Gemini 镜像站推荐</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">国内访问 Gemini 的最佳方案</p>
+                    </div>
                 </a>
             </div>
         </article>
     </div>
-    
+
     <footer class="footer">
         <p>© 2025 Gemini 3.0 完全指南 | <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a></p>
+        <p style="margin-top: 10px; font-size: 0.9rem;">
+            <a href="https://apipro.maynor1024.live/" target="_blank" style="color: var(--secondary-color);">Gemini API 中转站</a> |
+            <a href="https://maynorai.top/list/#/home" target="_blank" style="color: var(--secondary-color);">MaynorAI</a>
+        </p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 代码块复制功能
+            const codeBlocks = document.querySelectorAll('.code-block');
+            codeBlocks.forEach(block => {
+                const button = document.createElement('button');
+                button.innerHTML = '<i class="fas fa-copy"></i> 复制';
+                button.style.cssText = `
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background: var(--primary-color);
+                    color: white;
+                    border: none;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.8rem;
+                    z-index: 10;
+                `;
+
+                block.style.position = 'relative';
+                block.appendChild(button);
+
+                button.addEventListener('click', () => {
+                    const codeText = block.textContent.trim();
+                    navigator.clipboard.writeText(codeText);
+                    button.innerHTML = '<i class="fas fa-check"></i> 已复制';
+                    setTimeout(() => {
+                        button.innerHTML = '<i class="fas fa-copy"></i> 复制';
+                    }, 2000);
+                });
+            });
+
+            // 相关文章悬停效果
+            const relatedArticles = document.querySelectorAll('a[href$=".html"] > div');
+            relatedArticles.forEach(article => {
+                article.addEventListener('mouseenter', function() {
+                    this.style.borderColor = 'var(--primary-color)';
+                    this.style.boxShadow = 'var(--shadow-md)';
+                    this.style.transform = 'translateY(-2px)';
+                });
+                article.addEventListener('mouseleave', function() {
+                    this.style.borderColor = 'var(--border-color)';
+                    this.style.boxShadow = 'none';
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
 </body>
 </html>

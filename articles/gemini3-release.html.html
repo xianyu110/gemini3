@@ -1,399 +1,55 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程 ​ - Gemini 3.0 完全指南</title>
-    <meta name="description" content="2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程 ​ - Gemini 3.0 完全指南</title>
+<meta content="2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程
 ​
 2025年11月19日发布解读
 Google 正式发布 Gemini 3。
 官方将其定义为：
 “迄今为止最智能、最全面的 Gemini 模型，是迈向通用人工智能（AGI）的新阶段。”
-Gemini 3 在更高层次的推理（reasoning）、多模态融合（multimodal integration...">
-    <meta name="keywords" content="Gemini 3.0, 2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程 ​, AI代码生成, 谷歌AI, 人工智能教程">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程 ​">
-    <meta property="og:description" content="2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程
+Gemini 3 在更高层次的推理（reasoning）、多模态融合（multimodal integration..." name="description"/>
+<meta content="Gemini 3.0, 2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程 ​, AI代码生成, 谷歌AI, 人工智能教程" name="keywords"/>
+<!-- Open Graph -->
+<meta content="2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程 ​" property="og:title"/>
+<meta content="2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程
 ​
 2025年11月19日发布解读
 Google 正式发布 Gemini 3。
 官方将其定义为：
 “迄今为止最智能、最全面的 Gemini 模型，是迈向通用人工智能（AGI）的新阶段。”
-Gemini 3 在更高层次的推理（reasoning）、多模态融合（multimodal integration...">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://xianyu110.github.io/gemini3/articles/gemini3-release.html.html">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://xianyu110.github.io/gemini3/articles/gemini3-release.html.html">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            --primary-color: #4285f4;
-            --secondary-color: #34a853;
-            --text-primary: #202124;
-            --text-secondary: #5f6368;
-            --border-color: #dadce0;
-        }
-        
-        body {
-            font-family: 'Inter', 'Noto Sans SC', sans-serif;
-            line-height: 1.8;
-            color: var(--text-primary);
-            background: #fafafa;
-        }
-        
-        .header {
-            background: white;
-            border-bottom: 1px solid var(--border-color);
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        .nav {
-            display: flex;
-            gap: 30px;
-        }
-        
-        .nav a {
-            color: var(--text-primary);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav a:hover {
-            color: var(--primary-color);
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        
-        .article {
-            background: white;
-            border-radius: 12px;
-            padding: 50px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-        
-        .breadcrumb {
-            color: var(--text-secondary);
-            margin-bottom: 30px;
-            font-size: 0.9rem;
-        }
-        
-        .breadcrumb a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        .category-tag {
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin-bottom: 20px;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 30px;
-            color: var(--text-primary);
-        }
-        
-        h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            margin: 40px 0 20px 0;
-            color: var(--text-primary);
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin: 30px 0 15px 0;
-            color: var(--text-primary);
-        }
-        
-        p {
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
-        
-        ul {
-            margin: 20px 0;
-            padding-left: 30px;
-        }
-        
-        li {
-            margin-bottom: 10px;
-        }
-        
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        .cta-box {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            text-align: center;
-            margin: 40px 0;
-        }
-        
-        .cta-box h3 {
-            color: white;
-            margin-bottom: 15px;
-        }
-        
-        .cta-btn {
-            display: inline-block;
-            background: white;
-            color: var(--primary-color);
-            padding: 12px 30px;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            margin-top: 15px;
-            transition: transform 0.3s;
-        }
-        
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            text-decoration: none;
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--text-secondary);
-            margin-top: 60px;
-        }
-        
-        @media (max-width: 768px) {
-            .article {
-                padding: 30px 20px;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .nav {
-                display: none;
-            }
-        }
-    </style>
-</head>
+Gemini 3 在更高层次的推理（reasoning）、多模态融合（multimodal integration..." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://xianyu110.github.io/gemini3/articles/gemini3-release.html.html" property="og:url"/>
+<!-- Canonical URL -->
+<link href="https://xianyu110.github.io/gemini3/articles/gemini3-release.html.html" rel="canonical"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="../assets/styles.css" rel="stylesheet"/></head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <a href="https://xianyu110.github.io/gemini3/" class="logo">
-                <i class="fas fa-robot"></i> Gemini 3.0
+<header class="header">
+<div class="header-content">
+<a class="logo" href="https://xianyu110.github.io/gemini3/">
+<i class="fas fa-robot"></i> Gemini 3.0
             </a>
-            <nav class="nav">
-                <a href="https://xianyu110.github.io/gemini3/">首页</a>
-                <a href="https://xianyu110.github.io/gemini3/tutorial.html">教程</a>
-                <a href="https://xianyu110.github.io/gemini3/articles.html">文章</a>
-                <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="container">
-        <article class="article">
-            <div class="breadcrumb">
-                <a href="https://xianyu110.github.io/gemini3/">首页</a> / 
-                <a href="https://xianyu110.github.io/gemini3/articles.html">文章</a> / 
-                <span>版本介绍</span>
-            </div>
-            
-            <span class="category-tag">版本介绍</span>
-            
-            <p><h1>2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程 ​</h1></p><p>2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程
-​
-2025年11月19日发布解读
-Google 正式发布 Gemini 3。
-官方将其定义为：
-“迄今为止最智能、最全面的 Gemini 模型，是迈向通用人工智能（AGI）的新阶段。”
-Gemini 3 在更高层次的推理（reasoning）、多模态融合（multimodal integration）与智能体行为（agentic behavior）上实现了质的飞跃，让 AI 具备理解复杂场景、跨模态分析与自主执行任务的综合能力。
-快速开始（中文直连）
-Gemini 中文版入口
-：
-https://maynorai.top/list/#/home
-Gemini 镜像网站
-：
-https://maynorai.top/list/#/home
-概览
-​
-本指南提供：
-核心特性与技术突破
-：深度推理、多模态、智能体、长程规划与记忆。
-国内可用入口
-：可直连的中文站与镜像站点，覆盖 Gemini 3 Pro。
-上手教程与说明
-：官方与中国区可行方案，含注意事项与 FAQ。
-如需在页面中添加插图，请在文中相应位置插入图片，并在图片下方添加不超过 140 字的注释说明。
-Gemini 3：核心特性与技术突破
-​
-Gemini 3 的发布标志着人工智能从“知识检索”向“深度认知”的跨越。这一代模型不仅在多模态与推理能力上刷新行业基准，更通过全新架构实现从“被动工具”到“主动智能体”的质变。
-1. 深度推理能力（Advanced Reasoning）—— 从“回答问题”进化为“理解逻辑”
-​
-知其然，更知其所以然
-：不仅会用“公式”，还能解释“为何成立”与“如何在现实中应用”。
-Deep Think 模式
-：无外部工具下，博士级科学考试正确率达 41%，显著领先公开模型，思维链条高度接近人类专家。
-高信噪比表达
-：摒弃冗余修辞，输出更简洁、客观、结构化，提供“结论 + 解释路径”。
-可选插图：推理示意与结果对照（添加图片注释，不超过 140 字）
-2. 全域多模态理解（Multimodal Intelligence）—— 跨越感官边界的认知融合
-​
-无缝跨模态推理
-：图文、音视频与代码间的上下文共享与统一建模。
-视频知识萃取
-：从动态视频中提炼关键知识点与时序关系。
-图文混合推理
-：结合视觉细节与文本逻辑进行深层分析。
-语义映射与交互生成
-：连接代码逻辑与科学可视化，自动生成可交互图表。
-实战示例
-：
-复杂代码可视化与错误溯源。
-对匹克球/体育赛事视频进行战术分析与动作指导。
-可选插图：多模态用例示意（添加图片注释，不超过 140 字）
-3. 原生智能体能力（Agentic Capabilities）—— 引入“自主执行与验证”闭环
-​
-配合 Google 同步发布的
-Antigravity
-平台，AI 角色从辅助工具转变为开发者的“主动合伙人”。
-Antigravity：AI 原生 IDE
-自主规划：拆解复杂需求并制定计划。
-全栈执行：编写代码、调用浏览器或终端。
-自我修正：运行测试，发现错误并自主修复。
-交付结果：生成可直接运行的软件或网页。
-性能标杆（公开基准）
-：
-WebDev Arena：Elo 1487（新纪录）。
-Terminal-Bench 2.0（工具操作）：准确率 54.2%。
-SWE-bench Verified（真实代码修复）：解决率 76.2%。
-4. 宏观规划与长程记忆（Long-Horizon Planning）—— 系统思维 × 超长上下文
-​
-百万级 Token 上下文
-：跨阶段任务保持一致性与连续性。
-长周期任务执行
-：辅助制定并追踪全年商业计划，随进度动态优化。
-Vending-Bench 2 实测
-：成功经营虚拟公司一年并实现持续盈利，优于多数同类模型。
-如何使用 Gemini？（全球通用与中国区方案）
-​
-无论你身在何处，都有办法体验 Gemini 3 的强大能力。
-方案 A：官方渠道（全球通用）
-​
-访问官网：
-https://gemini.google.com
-登录账号：使用 Google 账户。
-开始使用：可直接体验标准版；如需更强大的 Gemini Advanced（基于 Ultra 模型），需订阅 Google One AI Premium。
-提示
-在中国大陆地区直接访问可能遇到网络连接问题。
-方案 B：在中国大陆地区使用 Gemini（推荐）
-​
-考虑国内网络环境与使用习惯，部分第三方平台基于 Gemini API 提供中文直连体验，免或简化注册，适合快速上手与日常使用。
-推荐平台（已验证可用）
-蓝鲸AI
-（首选）：
-https://maynorai.top/list/#/home
-聚合 Gemini 3 Pro、Claude 3.7 Sonnet、Grok 3、GPT-4o 等。
-界面简洁，响应迅速，国内体验流畅。
-Xsimple
-：
-https://maynorai.top/list/#/home
-支持 Gemini 2.5/3 Pro，集成 AI 绘画功能，扫码即可登录。
-Gemini 中文版（Gemini-Chinese）
-：
-https://https://maynorai.top/list/#/home
-支持 gemini-2.5-pro、Claude-4.5-sonnet、GPT-o1、o3、Groq-3，含 AI 绘画。
-Lify.vip
-：
-https://chat.lify.vip
-覆盖多模型，提供 AI 文件处理、AI PPT、思维导图等特色功能。
-重要声明
-上述第三方平台并非 Google 官方运营，均通过调用官方 API 提供服务。请注意数据安全，避免输入密码、银行账户等高度敏感信息；免费服务可能存在额度限制或后续付费策略。
-常见问题解答（FAQ）
-​
-Q1：使用国内镜像是否需要“翻墙”？
-A：不需要。文中推荐站点均可在中国大陆网络环境下直接访问。
-Q2：Gemini 是否免费？
-A：官方标准版免费；Gemini Advanced 需订阅付费。第三方镜像通常提供部分免费额度，高级功能按量或套餐计费。
-Q3：镜像网站安全吗？会泄露对话数据吗？
-A：推荐站点经过基础安全测试，但其隐私政策独立于 Google。建议将其作为生产力工具使用，避免输入敏感信息。
-Q4：什么是“上下文窗口”？为什么重要？
-A：一次对话中可被模型“记住/处理”的信息量，以 token 计。Gemini 1.5/3 提供百万级上下文，支持长文档与长视频的深度理解，是其核心优势之一。
-Q5：我是开发者，如何使用 Gemini API？
-A：可通过 Google AI Studio 或 Google Cloud Vertex AI 获取 API Key 并集成到应用中。注意密钥安全与配额管理。
-结语
-​
-Gemini 3 以更强的推理、多模态与智能体能力，开启从“被动工具”到“主动智能体”的新阶段。结合可直连的中文平台，你可以立即上手体验 Gemini 3 Pro 带来的效率与能力提升。
-立即体验：
-国内直连入口：
-https://maynorai.top/list/#/home
-镜像站点：
-https://maynorai.top/list/#/home
-如需进一步的上手实例、提示词模板与对比评测，建议参阅本站相关专题文章。</p>
-            
-            <div class="cta-box">
-                <h3>🚀 立即体验 Gemini 3.0</h3>
-                <p>开始你的 AI 代码生成之旅</p>
-                <a href="https://maynorai.top/list/#/home" class="cta-btn" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> 访问 MaynorAI
-                </a>
-            </div>
-        </article>
-    </div>
-    
-    <footer class="footer">
-        <p>© 2025 Gemini 3.0 完全指南 | <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a></p>
-    </footer>
+<nav class="nav">
+<a href="https://xianyu110.github.io/gemini3/">首页</a>
+<a href="https://xianyu110.github.io/gemini3/tutorial.html">教程</a>
+<a href="https://xianyu110.github.io/gemini3/articles.html">文章</a>
+<a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a>
+</nav>
+</div>
+</header>
+<div class="container">
+<article class="article"><div class="article-content fade-in-up"><h1>2025年 Gemini 3 正式发布！Google Gemini 3 Pro 国内使用最新教程 ​</h1><div class="article-meta"><span>&lt;i class="fas fa-calendar"&gt;&lt;/i&gt; 2025年12月18日</span></div><div class="api-info-box"><h3>🚀 Gemini API 中转站</h3><p>国内用户专属福利！如果你在国内访问 Google API 遇到网络问题，推荐使用以下中转站：</p><div class="api-key-display">推荐中转站： https://apipro.maynor1024.live/</div><p style="font-size: 0.9rem; opacity: 0.9;">✅ 国内直连，无需翻墙&lt;br&gt;✅ 兼容 OpenAI 格式&lt;br&gt;✅ 支持多模型切换&lt;br&gt;✅ 提供免费试用额度</p><a class="cta-btn" href="https://apipro.maynor1024.live/" target="_blank"> 访问 API 中转站</a></div><section class="article-card"><h2>📚 相关文章推荐</h2><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 25px;"><a href="gemini3.html.html" style="text-decoration: none; color: inherit;"><div style="padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; transition: var(--transition);"><h4 style="color: var(--primary-color); margin-bottom: 10px;">Gemini 3 正式发布</h4><p style="color: var(--text-secondary); font-size: 0.9rem;">Google Gemini 3 国内使用教程与功能评测</p></div></a><a href="gemini-api-guide.html.html" style="text-decoration: none; color: inherit;"><div style="padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; transition: var(--transition);"><h4 style="color: var(--primary-color); margin-bottom: 10px;">Gemini API 开发指南</h4><p style="color: var(--text-secondary); font-size: 0.9rem;">免费申请 API Key 与 Python/Node.js 接入教程</p></div></a><a href="gemini-features.html.html" style="text-decoration: none; color: inherit;"><div style="padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; transition: var(--transition);"><h4 style="color: var(--primary-color); margin-bottom: 10px;">Gemini 功能详解</h4><p style="color: var(--text-secondary); font-size: 0.9rem;">多模态、长上下文与代码能力全解析</p></div></a></div></section></div></article>
+</div>
+<footer class="footer">
+<p>© 2025 Gemini 3.0 完全指南 | <a href="https://github.com/xianyu110/gemini3" target="_blank">GitHub</a></p>
+</footer>
 </body>
 </html>
