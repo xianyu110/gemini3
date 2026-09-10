@@ -40,7 +40,7 @@ git push origin main
 
 ### 必须检查项
 - [ ] 主页正常显示
-- [ ] 所有链接指向正确（maynorai.top）
+- [ ] 所有链接指向正确（trygpt.asia）
 - [ ] 图片正常加载
 - [ ] 移动端显示正常
 - [ ] 文章列表正常
@@ -90,7 +90,7 @@ git push origin main
 
 - GitHub: https://github.com/xianyu110/gemini3
 - Issues: https://github.com/xianyu110/gemini3/issues
-- 体验链接: https://maynorai.top/list/#/home
+- 体验链接: https://trygpt.asia/list/#/home
 
 ---
 

@@ -70,7 +70,7 @@ gemini3/
 
 ### 已替换的链接
 - ✅ **替换数量**: 60个链接
-- ✅ **新链接**: https://maynorai.top/list/#/home
+- ✅ **新链接**: https://trygpt.asia/list/#/home
 - ✅ **保留链接**: Google官方、源网站
 
 ### 访问链接
@@ -78,7 +78,7 @@ gemini3/
 - 📚 教程: https://xianyu110.github.io/gemini3/tutorial.html
 - 📝 文章: https://xianyu110.github.io/gemini3/articles.html
 - 📦 GitHub: https://github.com/xianyu110/gemini3
-- 🚀 体验: https://maynorai.top/list/#/home
+- 🚀 体验: https://trygpt.asia/list/#/home
 
 ---
 
@@ -198,7 +198,7 @@ git push origin main
 ### 相关资源
 - Gemini官方: https://gemini.google.com
 - Google AI: https://ai.google.dev
-- MaynorAI: https://maynorai.top/list/#/home
+- MaynorAI: https://trygpt.asia/list/#/home
 
 ---
 

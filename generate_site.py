@@ -12,7 +12,7 @@ ARTICLES_DIR = "/Users/chinamanor/Downloads/cursor编程/gemini3/素材/articles
 OUTPUT_DIR = "."
 SITE_URL = "https://xianyu110.github.io/gemini3"
 GITHUB_URL = "https://github.com/xianyu110/gemini3"
-MAYNOR_URL = "https://maynorai.top/list/#/home"
+MAYNOR_URL = "https://trygpt.asia/list/#/home"
 
 # 文章分类
 CATEGORIES = {

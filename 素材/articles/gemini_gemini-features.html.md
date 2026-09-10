@@ -9,7 +9,7 @@ Google Gemini 自发布以来，以其强大的性能和独特的功能架构，
 想亲自测试 Gemini 的强大功能？ 👉
 国内直连入口
 ：
-蓝鲸AI (https://maynorai.top/list/#/home)
+蓝鲸AI (https://trygpt.asia/list/#/home)
 - 支持 Gemini 2.5 Pro 完整功能体验。
 1. 原生多模态 (Native Multimodality)
 ​
@@ -90,5 +90,5 @@ Gemini 不仅仅是一个聊天机器人，它是一个能看、能听、能思�
 🚀
 现在就开始探索
 ：
-蓝鲸AI (https://maynorai.top/list/#/home)
+蓝鲸AI (https://trygpt.asia/list/#/home)
 

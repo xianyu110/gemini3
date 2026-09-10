@@ -9,10 +9,10 @@ Gemini中文版完整使用指南：（支持Gemini 2.5 pro）【2025年10月更
 快速访问通道
 ​
 🚀 Gemini 中文版官方入口
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 - 国内直连，无需翻墙，完整支持 Gemini 2.5 Pro
 🌐 Gemini 镜像站推荐
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 - 集成多个主流 AI 模型，功能强大
 什么是 Gemini 中文版？
 ​

@@ -9,11 +9,11 @@ Gemini安装手册：手机App下载与网页版使用全攻略（Android/iOS/We
 对于不想安装 App 或受限于网络环境的用户，直接使用网页版是最便捷的选择。 👉
 国内直连网页版
 ：
-蓝鲸AI (https://maynorai.top/list/#/home)
+蓝鲸AI (https://trygpt.asia/list/#/home)
 🌐
 Gemini 中文版
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 📱 Android 安卓用户安装指南
 ​
 Google 官方已推出独立的 Gemini App，但目前仅在部分国家/地区的 Google Play 商店上架。
@@ -73,7 +73,7 @@ PWA 安装
 无需翻墙，无需安装，打开浏览器即可使用，支持手机和电脑自适应布局。
 推荐入口
 ：
-蓝鲸AI (https://maynorai.top/list/#/home)
+蓝鲸AI (https://trygpt.asia/list/#/home)
 优势
 ：
 ⚡️ 访问速度快，无延迟。

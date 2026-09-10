@@ -9,10 +9,10 @@ Gemini3.0镜像站完整推荐：国内访问Gemini最佳方案2025
 快速访问通道
 ​
 🚀 Gemini 中文版官方入口
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 - 国内直连，无需翻墙，完整支持 Gemini 3.0 和 Gemini 2.5 Pro
 🌐 Gemini 镜像站推荐
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 - 集成多个主流 AI 模型，功能强大
 为什么需要 Gemini 镜像站？
 ​
@@ -52,7 +52,7 @@ https://maynorai.top/list/#/home
 ​
 ⭐ 综合评分：★★★★★ (9.8/10)
 官方网址：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 核心优势
 ​
 1. 模型支持最全面
@@ -133,7 +133,7 @@ https://maynorai.top/list/#/home
 ​
 ⭐ 综合评分：★★★★★ (9.5/10)
 官方网址：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 核心优势
 ​
 1. 极简设计理念
@@ -198,7 +198,7 @@ https://maynorai.top/list/#/home
 ​
 ⭐ 综合评分：★★★★☆ (9.0/10)
 官方网址：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 核心优势
 ​
 1. 专注 Gemini 优化

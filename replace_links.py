@@ -8,7 +8,7 @@ import re
 
 # 配置
 ARTICLES_DIR = "/Users/chinamanor/Downloads/cursor编程/gemini3/素材/articles"
-NEW_LINK = "https://maynorai.top/list/#/home"
+NEW_LINK = "https://trygpt.asia/list/#/home"
 
 # 需要替换的旧链接列表
 OLD_LINKS = [

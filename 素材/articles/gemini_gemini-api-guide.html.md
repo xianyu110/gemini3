@@ -9,7 +9,7 @@ Google Gemini 提供了强大的 API 接口，允许开发者将其多模态能�
 如果你需要更稳定、无需翻墙的 API 服务，或者需要集成多个模型（如 GPT-4, Claude），可以考虑使用聚合 API 服务。 👉
 推荐平台
 ：
-Xsimple (https://maynorai.top/list/#/home)
+Xsimple (https://trygpt.asia/list/#/home)
 - 提供兼容 OpenAI 格式的 API 接口，一站式接入主流模型。
 第一步：获取 API Key
 ​
@@ -191,7 +191,7 @@ api_key
 ,
 base_url
 =
-"https://maynorai.top/list/#/home
+"https://trygpt.asia/list/#/home
 # 示例地址，请以官网为准
 )
 response

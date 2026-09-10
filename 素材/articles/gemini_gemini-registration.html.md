@@ -11,7 +11,7 @@ Gemini注册指南：2025最新Google Gemini账号申请教程（含免注册方
 🚀
 推荐入口
 ：
-蓝鲸AI (https://maynorai.top/list/#/home)
+蓝鲸AI (https://trygpt.asia/list/#/home)
 Google Gemini 是目前最强大的多模态 AI 模型之一，但由于官方对服务地区的限制，国内用户想要注册和使用往往面临不少门槛。本文将为你提供两种方案：
 官方账号注册
 和
@@ -36,14 +36,14 @@ Google Gemini 是目前最强大的多模态 AI 模型之一，但由于官方�
 ​
 网址
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 特点
 ：界面极简，支持 Gemini 2.5 Pro 和 Midjourney 绘画，新用户注册即送免费额度。
 2. Xsimple
 ​
 网址
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 特点
 ：功能全能，集成 10+ 主流模型，支持 AI PPT、知识库等高级功能。
 方案二：官方账号注册流程
@@ -118,5 +118,5 @@ https://gemini.google.com
 👉
 立即体验
 ：
-蓝鲸AI (https://maynorai.top/list/#/home)
+蓝鲸AI (https://trygpt.asia/list/#/home)
 

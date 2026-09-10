@@ -139,7 +139,7 @@ def create_api_box(soup):
     api_box.append(desc)
 
     key_div = soup.new_tag('div', **{'class': 'api-key-display'})
-    key_div.string = '推荐中转站： https://apipro.maynor1024.live/'
+    key_div.string = '推荐中转站： https://tryallapi.com/'
     api_box.append(key_div)
 
     features = soup.new_tag('p', **{'style': 'font-size: 0.9rem; opacity: 0.9;'})
@@ -150,7 +150,7 @@ def create_api_box(soup):
     api_box.append(features)
 
     link = soup.new_tag('a', **{
-        'href': 'https://apipro.maynor1024.live/',
+        'href': 'https://tryallapi.com/',
         'class': 'cta-btn',
         'target': '_blank'
     })

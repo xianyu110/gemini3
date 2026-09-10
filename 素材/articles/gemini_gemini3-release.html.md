@@ -12,10 +12,10 @@ Gemini 3 在更高层次的推理（reasoning）、多模态融合（multimodal 
 快速开始（中文直连）
 Gemini 中文版入口
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 Gemini 镜像网站
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 概览
 ​
 本指南提供：
@@ -93,16 +93,16 @@ https://gemini.google.com
 推荐平台（已验证可用）
 蓝鲸AI
 （首选）：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 聚合 Gemini 3 Pro、Claude 3.7 Sonnet、Grok 3、GPT-4o 等。
 界面简洁，响应迅速，国内体验流畅。
 Xsimple
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 支持 Gemini 2.5/3 Pro，集成 AI 绘画功能，扫码即可登录。
 Gemini 中文版（Gemini-Chinese）
 ：
-https://https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 支持 gemini-2.5-pro、Claude-4.5-sonnet、GPT-o1、o3、Groq-3，含 AI 绘画。
 Lify.vip
 ：
@@ -127,8 +127,8 @@ A：可通过 Google AI Studio 或 Google Cloud Vertex AI 获取 API Key 并集�
 Gemini 3 以更强的推理、多模态与智能体能力，开启从“被动工具”到“主动智能体”的新阶段。结合可直连的中文平台，你可以立即上手体验 Gemini 3 Pro 带来的效率与能力提升。
 立即体验：
 国内直连入口：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 镜像站点：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 如需进一步的上手实例、提示词模板与对比评测，建议参阅本站相关专题文章。
 

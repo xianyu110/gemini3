@@ -58,7 +58,7 @@ Gemini Advanced
 ：需要高强度使用 AI 的专业人士、开发者。
 访问地址
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 2. AI 镜像站直达 (推荐指数：⭐⭐⭐⭐⭐)
 ​
 主打
@@ -70,7 +70,7 @@ https://maynorai.top/list/#/home
 ：追求稳定性的日常用户、学生。
 访问地址
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 3. AI 中文版入口 (推荐指数：⭐⭐⭐⭐)
 ​
 专为中文用户优化的
@@ -84,7 +84,7 @@ Gemini中文版
 ：AI 初学者、中文内容创作者。
 访问地址
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 4. 备用镜像节点 (推荐指数：⭐⭐⭐⭐)
 ​
 作为备用方案，该站点在主节点拥堵时表现依然出色。
@@ -92,7 +92,7 @@ https://maynorai.top/list/#/home
 ：高可用性，支持流式输出。
 访问地址
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 Gemini 3 Pro 镜像站核心功能评测
 ​
 在这些镜像站上，你依然可以完整体验
@@ -135,18 +135,18 @@ Google Gemini 3 Pro
 💡 推荐使用工具：
 Gemini/GPT 聚合站
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 (支持多模型切换)
 AI 镜像站直达
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 (高速稳定)
 AI 中文版入口
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 备用镜像节点
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 
 
 ## 📸 文章图片

@@ -26,7 +26,7 @@
 
 所有链接已统一替换为：
 ```
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 ```
 
 ### 3. 文件检查范围
@@ -121,7 +121,7 @@ images/
 git add .
 
 # 2. 提交更改
-git commit -m "Complete Gemini 3.0 website - All links updated to maynorai.top"
+git commit -m "Complete Gemini 3.0 website - All links updated to trygpt.asia"
 
 # 3. 推送到GitHub
 git push origin main

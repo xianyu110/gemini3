@@ -37,7 +37,7 @@
 </a>
 </td>
 <td align="center" width="25%">
-<a href="https://maynorai.top/list/#/home">
+<a href="https://trygpt.asia/list/#/home">
 <img src="https://img.shields.io/badge/🚀_Try-Start_Now-ea4335?style=for-the-badge" alt="Try"/><br/>
 <sub><b>Free Trial</b></sub>
 </a>
@@ -192,7 +192,7 @@ This project is licensed under the [MIT License](LICENSE).
 - 📖 [Google AI Blog](https://blog.google/technology/ai/)
 
 ### Experience Platforms
-- 🚀 [MaynorAI](https://maynorai.top/list/#/home) - Recommended
+- 🚀 [MaynorAI](https://trygpt.asia/list/#/home) - Recommended
 - 🎮 [LMArena](https://chat.lmsys.org/) - Model Arena
 - 🔬 [Google AI Studio](https://aistudio.google.com/) - Official Tool
 

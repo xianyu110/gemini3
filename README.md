@@ -140,13 +140,13 @@ Gemini 中国代理站的上线，是为了打破信息差，让每个人都能�
 </a>
 </td>
 <td align="center" width="20%">
-<a href="https://maynorai.top/list/#/home">
+<a href="https://trygpt.asia/list/#/home">
 <img src="https://img.shields.io/badge/🚀_体验-立即开始-ea4335?style=for-the-badge" alt="体验"/><br/>
 <sub><b>免费体验</b></sub>
 </a>
 </td>
 <td align="center" width="20%">
-<a href="https://apipro.maynor1024.live/">
+<a href="https://tryallapi.com/">
 <img src="https://img.shields.io/badge/🔌_API-接口服务-9c27b0?style=for-the-badge" alt="API"/><br/>
 <sub><b>API中转站</b></sub>
 </a>
@@ -172,8 +172,8 @@ Gemini 中国代理站的上线，是为了打破信息差，让每个人都能�
 
 ### 🌟 推荐服务
 
-- 🚀 **[MaynorAI](https://maynorai.top/list/#/home)** - 免费在线体验平台
-- 🔌 **[API 中转站](https://apipro.maynor1024.live/)** - 国内优化的 API 接口服务
+- 🚀 **[MaynorAI](https://trygpt.asia/list/#/home)** - 免费在线体验平台
+- 🔌 **[API 中转站](https://tryallapi.com/)** - 国内优化的 API 接口服务
 
 ## ✨ 主要特性
 
@@ -275,7 +275,7 @@ Gemini 3.0 是 Google 推出的最新一代 AI 大语言模型，具有以下特
 - ✅ 免费额度
 - ✅ 操作简单
 
-**访问**: [MaynorAI](https://maynorai.top/list/#/home)
+**访问**: [MaynorAI](https://trygpt.asia/list/#/home)
 
 </td>
 <td>
@@ -287,7 +287,7 @@ Gemini 3.0 是 Google 推出的最新一代 AI 大语言模型，具有以下特
 - ✅ 国内优化
 - ✅ 开发友好
 
-**访问**: [API中转站](https://apipro.maynor1024.live/)
+**访问**: [API中转站](https://tryallapi.com/)
 
 </td>
 <td>
@@ -449,7 +449,7 @@ Gemini：[修改样式]
 - ⚠️ 遵守平台使用条款
 
 **API 开发推荐**:
-- 🔌 [Gemini API 中转站](https://apipro.maynor1024.live/) - 国内优化的 API 服务
+- 🔌 [Gemini API 中转站](https://tryallapi.com/) - 国内优化的 API 服务
 - 🔬 [Google AI Studio](https://aistudio.google.com/) - 官方 API
 </details>
 
@@ -463,15 +463,15 @@ Gemini：[修改样式]
 4. 考虑使用 API 方式
 
 **推荐平台**：
-- 🚀 [MaynorAI](https://maynorai.top/list/#/home) - 在线体验
-- 🔌 [API 中转站](https://apipro.maynor1024.live/) - API 接口
+- 🚀 [MaynorAI](https://trygpt.asia/list/#/home) - 在线体验
+- 🔌 [API 中转站](https://tryallapi.com/) - API 接口
 </details>
 
 <details>
 <summary><b>Q6: 如何使用 API 接口？</b></summary>
 
 **步骤**:
-1. 访问 [API 中转站](https://apipro.maynor1024.live/)
+1. 访问 [API 中转站](https://tryallapi.com/)
 2. 注册账号并获取 API Key
 3. 参考 [API 使用指南](#-api-使用指南)
 4. 开始调用接口
@@ -494,7 +494,7 @@ Gemini：[修改样式]
 - 📊 透明的价格体系
 - 💳 多种支付方式
 
-**详细价格**: 访问 [API 中转站](https://apipro.maynor1024.live/) 查看最新定价
+**详细价格**: 访问 [API 中转站](https://tryallapi.com/) 查看最新定价
 
 **省钱技巧**:
 - 优化提示词，减少 Token 消耗
@@ -556,13 +556,13 @@ graph LR
 
 #### 1. 获取 API Key
 
-访问 [API 中转站](https://apipro.maynor1024.live/) 注册并获取你的 API Key。
+访问 [API 中转站](https://tryallapi.com/) 注册并获取你的 API Key。
 
 #### 2. 基础调用
 
 ```bash
 # cURL 示例
-curl https://apipro.maynor1024.live/v1/chat/completions \
+curl https://tryallapi.com/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
@@ -582,7 +582,7 @@ curl https://apipro.maynor1024.live/v1/chat/completions \
 import requests
 
 def stream_chat(prompt):
-    url = "https://apipro.maynor1024.live/v1/chat/completions"
+    url = "https://tryallapi.com/v1/chat/completions"
     headers = {
         "Authorization": "Bearer YOUR_API_KEY",
         "Content-Type": "application/json"
@@ -614,7 +614,7 @@ stream_chat("请写一个Python排序算法")
 
 ### 定价说明
 
-访问 [API 中转站](https://apipro.maynor1024.live/) 查看最新定价。
+访问 [API 中转站](https://tryallapi.com/) 查看最新定价。
 
 **优势**:
 - 💰 价格透明，按需付费
@@ -653,7 +653,7 @@ stream_chat("请写一个Python排序算法")
 18. [Gemini 安装手册](https://xianyu110.github.io/gemini3/articles/gemini-installation.html.html)
 19. [Gemini API 使用指南](https://xianyu110.github.io/gemini3/articles/gemini-api-guide.html.html)
 
-> 💡 **API 开发者推荐**: 使用 [API 中转站](https://apipro.maynor1024.live/) 获得更好的国内访问体验和更低的延迟
+> 💡 **API 开发者推荐**: 使用 [API 中转站](https://tryallapi.com/) 获得更好的国内访问体验和更低的延迟
 
 ### 🆚 对比评测
 20. [Gemini vs GPT-4 对比](https://xianyu110.github.io/gemini3/articles/gemini-vs-gpt4.html.html)
@@ -747,8 +747,8 @@ git push origin feature/your-feature
 - 📖 [Google AI 博客](https://blog.google/technology/ai/)
 
 ### 体验平台
-- 🚀 [MaynorAI](https://maynorai.top/list/#/home) - 推荐平台
-- 🔌 [Gemini API 中转站](https://apipro.maynor1024.live/) - API 接口服务
+- 🚀 [MaynorAI](https://trygpt.asia/list/#/home) - 推荐平台
+- 🔌 [Gemini API 中转站](https://tryallapi.com/) - API 接口服务
 - 🎮 [LMArena](https://chat.lmsys.org/) - 模型竞技场
 - 🔬 [Google AI Studio](https://aistudio.google.com/) - 官方工具
 
@@ -863,7 +863,7 @@ git push origin feature/your-feature
 # Python 示例 - 使用 API 中转站
 import requests
 
-API_URL = "https://apipro.maynor1024.live/v1/chat/completions"
+API_URL = "https://tryallapi.com/v1/chat/completions"
 API_KEY = "your-api-key"
 
 headers = {
@@ -884,7 +884,7 @@ print(response.json())
 
 ```javascript
 // JavaScript 示例 - 使用 API 中转站
-const API_URL = "https://apipro.maynor1024.live/v1/chat/completions";
+const API_URL = "https://tryallapi.com/v1/chat/completions";
 const API_KEY = "your-api-key";
 
 async function callGemini() {
@@ -930,8 +930,8 @@ callGemini();
 
 ### 🔗 外部资源
 - [Google Gemini 官网](https://gemini.google.com)
-- [MaynorAI 平台](https://maynorai.top/list/#/home)
-- [Gemini API 中转站](https://apipro.maynor1024.live/)
+- [MaynorAI 平台](https://trygpt.asia/list/#/home)
+- [Gemini API 中转站](https://tryallapi.com/)
 - [LMArena 竞技场](https://chat.lmsys.org/)
 - [Google AI 文档](https://ai.google.dev/docs)
 - [Vertex AI 平台](https://cloud.google.com/vertex-ai)
@@ -983,19 +983,19 @@ callGemini();
 - [Gemini API 文档](https://ai.google.dev/docs)
 - [Vertex AI 指南](https://cloud.google.com/vertex-ai/docs)
 - [Google AI 博客](https://blog.google/technology/ai/)
-- [API 中转站文档](https://apipro.maynor1024.live/)
+- [API 中转站文档](https://tryallapi.com/)
 
 ### 🎥 视频教程
 - [Gemini 官方介绍](https://www.youtube.com/watch?v=example)
 - [实战案例分享](https://www.youtube.com/watch?v=example)
 - [API 开发教程](https://www.youtube.com/watch?v=example)
-- [API 中转站使用教程](https://apipro.maynor1024.live/)
+- [API 中转站使用教程](https://tryallapi.com/)
 
 ### 📖 推荐阅读
 - [AI 提示词工程](https://www.promptingguide.ai/)
 - [大语言模型原理](https://example.com)
 - [AI 应用开发实践](https://example.com)
-- [Gemini API 最佳实践](https://apipro.maynor1024.live/)
+- [Gemini API 最佳实践](https://tryallapi.com/)
 
 ---
 

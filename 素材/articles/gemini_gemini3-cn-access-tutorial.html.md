@@ -45,10 +45,10 @@ Gemini 3
 模型的镜像网站。这里推荐几个经过验证的稳定入口：
 Gemini/GPT 聚合站
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 AI 镜像站直达
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 第二步：选择模型 (Model Selection)
 ​
 进入网站后，通常在对话框上方或侧边栏会有模型选择器。
@@ -115,18 +115,18 @@ Gemini 3 镜像站
 💡 推荐使用工具：
 Gemini/GPT 聚合站
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 (支持多模型切换)
 AI 镜像站直达
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 (高速稳定)
 AI 中文版入口
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 备用镜像节点
 ：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 
 
 ## 📸 文章图片

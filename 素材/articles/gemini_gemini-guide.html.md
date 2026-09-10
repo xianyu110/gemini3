@@ -10,10 +10,10 @@ Gemini (双子座) 作为 Google DeepMind 团队开发的旗舰级语言模型�
 快速访问
 ​
 🚀 Gemini 中文版入口
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 - 国内直连，无需翻墙，支持 Gemini 3.0 和 Gemini 2.5 Pro
 🌐 Gemini 镜像网站
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 - 功能全面，集成多个主流 AI 模型
 为什么这么多人想用 Gemini？
 ​

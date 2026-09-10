@@ -9,10 +9,10 @@ AI 绘画正在改变艺术创作方式，Gemini 为您打开 AI 艺术创作的
 快速访问通道
 ​
 🚀 Gemini 中文版官方入口
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 - 国内直连，支持 AI 绘画功能
 🌐 Gemini 镜像站推荐
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 - 集成 Midjourney AI 绘画，功能强大
 Gemini AI 绘画能力概述
 ​

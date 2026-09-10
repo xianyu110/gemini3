@@ -11,10 +11,10 @@ Gemini
 快速访问
 ​
 🚀 Gemini 中文版入口
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 - 国内直连，无需翻墙，支持 Gemini 2.5 Pro
 🌐 Gemini 镜像网站
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 - 功能全面，集成多个主流 AI 模型
 发展历程
 ​

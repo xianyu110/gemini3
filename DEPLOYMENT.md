@@ -25,7 +25,7 @@ gemini3/
 - **教程**: https://xianyu110.github.io/gemini3/tutorial.html
 - **文章列表**: https://xianyu110.github.io/gemini3/articles.html
 - **GitHub**: https://github.com/xianyu110/gemini3
-- **体验 Gemini**: https://maynorai.top/list/#/home
+- **体验 Gemini**: https://trygpt.asia/list/#/home
 
 ## 📊 SEO 优化清单
 

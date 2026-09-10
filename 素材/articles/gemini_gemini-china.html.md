@@ -33,7 +33,7 @@ Gemini 2.5 Pro
 ⭐ 推荐方式一：蓝鲸AI - 极简高效
 ​
 🔗 官方入口：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 综合评分：★★★★★
 核心优势：
 ✅ 支持 Gemini 3.0、Gemini 2.5 Pro、GPT-4o、Claude 3.5 Sonnet
@@ -46,7 +46,7 @@ https://maynorai.top/list/#/home
 ⭐ 推荐方式二：Xsimple - 功能全能王
 ​
 🔗 官方入口：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 综合评分：★★★★★
 核心优势：
 ✅ 集成 10+ 主流 AI 模型（Gemini 3.0/2.5 Pro、GPT-4o、Claude 3.5、Grok-3、DeepSeek 等）
@@ -60,7 +60,7 @@ https://maynorai.top/list/#/home
 ⭐ 推荐方式三：Gemini-Chinese - 专注优化
 ​
 🔗 官方入口：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 综合评分：★★★★☆
 核心优势：
 ✅ 专门针对 Gemini 系列模型深度优化

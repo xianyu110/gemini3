@@ -7,7 +7,7 @@ import os
 import re
 
 ARTICLES_DIR = "/Users/chinamanor/Downloads/cursor编程/gemini3/素材/articles"
-NEW_LINK = "https://maynorai.top/list/#/home"
+NEW_LINK = "https://trygpt.asia/list/#/home"
 
 # 所有需要替换的域名和链接模式
 OLD_PATTERNS = [

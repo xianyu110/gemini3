@@ -15,7 +15,7 @@
 - ✓ 规范了列表和标题格式
 
 ### 3. 链接替换
-- ✓ 将所有第三方平台链接统一替换为：`https://maynorai.top/list/#/home`
+- ✓ 将所有第三方平台链接统一替换为：`https://trygpt.asia/list/#/home`
 - ✓ 保留了 Google 官方链接和源网站链接
 - ✓ 共替换了 60 个链接
 
@@ -71,7 +71,7 @@ gemini3/
 - 📦 GitHub: https://github.com/xianyu110/gemini3
 
 ### 体验链接
-- 🚀 MaynorAI: https://maynorai.top/list/#/home
+- 🚀 MaynorAI: https://trygpt.asia/list/#/home
 - 🎮 LMArena: https://chat.lmsys.org/
 - ☁️ Vertex AI: https://cloud.google.com/vertex-ai
 - 🔧 Gemini CLI: https://ai.google.dev/edge

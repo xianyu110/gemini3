@@ -54,7 +54,7 @@ Thinking (深度思考)
 方案 B（推荐流）：
 直接使用国内聚合站。
 推荐平台：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 说明：
 这是国内专业的 AI 账号服务平台，支持
 Gemini
@@ -62,7 +62,7 @@ Gemini
 方案 C（Gemini 镜像站）：
 使用Gemini 镜像站。
 推荐平台：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 说明：
 这是国内专业的镜像平台，支持
 Gemini
@@ -162,9 +162,9 @@ Gemini 3 Pro
 👉 免费体验：
 https://aistudio.google.com
 👉 国内直连入口：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 👉 镜像站点：
-https://maynorai.top/list/#/home
+https://trygpt.asia/list/#/home
 关键词标签：Google Gemini, Gemini 3, Gemini 3 Pro, Gemini国内使用, Gemini官网, OpenAI GPT-5对比, 人工智能模型, AI Agent
 
 
